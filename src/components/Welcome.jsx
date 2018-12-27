@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default Welcome = (props) => {
+export const Welcome = (props) => {
   return (
     <div>
       Welcome {props.userName || "Visitante"}
@@ -9,6 +9,6 @@ export default Welcome = (props) => {
   )
 }
 
-componentName.propTypes = {
-    userName: React.propTypes.string,
+Welcome.propTypes = {
+    //userName: React.PropTypes.string,
 }

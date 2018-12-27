@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './Login.scss'
 
 
-export const Login = (props) => {
+ const Login = (props) => {
     
     return (
         <div className="login-content">
@@ -23,7 +23,7 @@ export const Login = (props) => {
             </div>
             <button type="button" onClick={props.onSubmit} className="btn btn-primary">Submit</button>
 
-            {props.spotifyAuth != ""}
+            {props.spotifyAuth}
 
         </div >
 
@@ -34,3 +34,4 @@ Login.propTypes = {
 
 }
 
+export default Login;

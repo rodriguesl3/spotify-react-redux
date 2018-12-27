@@ -9,6 +9,7 @@ import rootReducers from '../redux-flow/reducers/index'
 
 import { NavBar } from '../components/navbar'
 import Login from './Authenticate'
+import Welcome from './Welcome';
 
 const store = createStore(rootReducers,
   compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
@@ -18,15 +19,13 @@ const store = createStore(rootReducers,
 const App = () => {
   return (
     <Provider store={store}>
-      <NavBar brandName="N2L" />
-      <div className="container">
-        <Router>
-          <Route path="/login" component={Login} />
-          {/* <Route path="/login" component={Login} />
-        <Route path="/main" component={Dashboard} /> */}
-        </Router>
-      </div>
-
+        <NavBar brandName="N2L" />
+          <Router>
+          <div className="container">
+            <Route path="/login" component={Login} />
+            <Route path="/main" component={Welcome} />
+            </div>
+          </Router>
     </Provider>
   );
 }
