@@ -3,17 +3,10 @@ import {
     ADD_CREDENTIALS
 } from "../../constants";
 import Axios from "axios";
-import {
-    baseUri,
-    clientID,
-    clientSecret
-} from '../../secret'
 
 
-
-export const submitCredentials = (credentials) => {
+export const submitCredentials = (credentials, history) => {
     return dispatch => {
-        var basicAuth = 'Basic ' + btoa(clientID + ':' + clientSecret);
         return Axios.get("https://localhost:5001/api/token").
         then(response => {
             
@@ -26,6 +19,9 @@ export const submitCredentials = (credentials) => {
                     var access_token = win.document.location.pathname.split('=')[1];
                     win.close();
                     window.sessionStorage.setItem('access_token', access_token);
+
+                    history.push('/main');
+                    
                     dispatch({
                         type: USER_AUTHENTICATION,
                         payload: access_token

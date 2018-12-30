@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import Login  from '../components/Login';
+import Login from '../components/Login';
 import { submitCredentials, addCredentials } from '../redux-flow/actions/login-actions'
+
+
+
 
 const mapStateToProps = (state) => ({
     username: state.authentication.username,
@@ -11,7 +14,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    onSubmit: (credentials) => dispatch(submitCredentials(credentials)),
+    onSubmit: (credentials, history) => dispatch(submitCredentials(credentials, history)),
     onUpdateCredentials: (e) => {
         const { name, value } = e.target;
         dispatch(addCredentials({ name, value }))

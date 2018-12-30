@@ -1,32 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './Login.scss'
+import { withRouter } from 'react-router-dom'
 
 
- const Login = (props) => {
-    
+const Login = (props) => {
+    const { history } = props;
+
+    const handleSubmit = () => {
+        props.onSubmit(props, history)
+    }
+
     return (
-        <div className="login-content">
-            <div className="form-group">
-                <label for="username">Email address</label>
-                <input type="username" className="form-control" name="username" aria-describedby="emailHelp"
-                    placeholder="Enter email" value={props.username} onChange={props.onUpdateCredentials} />
-            </div>
-            <div className="form-group">
-                <label for="txtPassword">Password</label>
-                <input type="password" className="form-control" name="password"
-                    placeholder="Password" value={props.password} onChange={props.onUpdateCredentials} />
-            </div>
-            <div className="form-group form-check">
-                <input type="checkbox" className="form-check-input" id="chkRememberCredentials" />
-                <label className="form-check-label" for="chkRememberCredentials">Check me out</label>
-            </div>
-            <button type="button" onClick={props.onSubmit} className="btn btn-primary">Submit</button>
-
-            {props.spotifyAuth}
-
-        </div >
-
+        <div id="container" >
+            <img class="imgBackground" src="https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+            <div onClick={handleSubmit} class="pulse"></div>
+            <div class="dot"></div>
+        </div>
     );
 }
 
@@ -34,4 +24,4 @@ Login.propTypes = {
 
 }
 
-export default Login;
+export default withRouter(Login);
