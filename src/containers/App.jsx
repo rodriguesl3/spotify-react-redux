@@ -9,7 +9,7 @@ import rootReducers from '../redux-flow/reducers/index'
 
 import { NavBar } from '../components/navbar'
 import Login from './Authenticate'
-import Welcome from './Welcome';
+import MainContainer from './MainContainer';
 
 import createBrowserHistory from "history/createBrowserHistory";
 
@@ -27,7 +27,7 @@ const App = () => {
       <Router>
         <div>
           <Route path="/login" component={Login} />
-          <Route path="/main" component={Welcome} />
+          <Route path="/main" component={MainContainer} />
         </div>
       </Router>
     </Provider>
