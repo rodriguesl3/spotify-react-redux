@@ -23,7 +23,7 @@ const store = createStore(rootReducers,
 const App = () => {
   return (
     <Provider store={store}>
-      {/* <NavBar brandName="N2L" /> */}
+      <NavBar brandName="N2L" />
       <Router>
         <div>
           <Route path="/login" component={Login} />

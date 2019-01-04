@@ -15,7 +15,7 @@
 }
 
 .sideBarContent:hover .userName {
-   
+    display: flex;
     font-size: 30px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .userName {
-    display: flex;
+    display: none;
     justify-content: center;
     align-content: center;
     font-size: 15px;

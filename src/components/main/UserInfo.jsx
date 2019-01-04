@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-export const Content = (props) => {
+export const UserInfo = (props) => {
   const { spotifyUserInfo } = props;
 
   // const getUserInfoHandle = () => {
@@ -14,14 +14,15 @@ export const Content = (props) => {
     <div>
       Welcome
       spotify User Information
-      {JSON.stringify(spotifyUserInfo)}
+      {!spotifyUserInfo && <div>Loading</div>}
+      {/* {spotifyUserInfo && JSON.stringify(spotifyUserInfo)} */}
 
-      {/* <button onClick={getUserInfoHandle}> buscar Informação</button> */}
+
     </div>
   )
 }
 
-Content.propTypes = {
+UserInfo.propTypes = {
   //userName: React.PropTypes.string,
   spotifyUserInfo: PropTypes.object,
 }

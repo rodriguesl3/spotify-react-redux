@@ -1,13 +1,19 @@
 import {
-    USER_INFORMATION
+    USER_INFORMATION,
+    ARTIST_FOLLOWED
 } from '../../constants/index'
 
-export const welcome = (state = [], action) => {
+export const userInformation = (state = [], action) => {
     switch (action.type) {
         case USER_INFORMATION:
             return {
                 ...state,
                 spotifyUserInfo: action.payload
+            }
+        case ARTIST_FOLLOWED:
+            return {
+                ...state,
+                followingArtist: action.payload
             }
         default:
             return state;

@@ -7,7 +7,12 @@ const imageUrl = "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact
 
 
 export const SideBar = (props) => {
-    const { spotifyUserInfo } = props;
+    const { spotifyUserInfo, onGetFollowingArtist } = props;
+
+    const GetFollowingArtistHandle = () => {
+        onGetFollowingArtist();
+    }
+
     return (
         <div className="container">
             <div className="row sideBarContent">
@@ -20,13 +25,10 @@ export const SideBar = (props) => {
                 <div className="col-sm-12 userName">
                     {spotifyUserInfo.display_name}
                 </div>
-
-                <hr />
-
-                continua a lista...
-
+                <div className="row sideBarList">
+                    <div className="col-sm-6" onClick={GetFollowingArtistHandle}>Artists Following</div>
+                </div>
             </div>
-
         </div>
     )
 }
