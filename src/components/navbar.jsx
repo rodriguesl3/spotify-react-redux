@@ -6,6 +6,7 @@ export const NavBar = (props) => {
 
     return (
         <div>
+            
             <nav className="navbar navbar-dark bg-dark">
                 <a href="#" className="navbar-brand">
                     {props.brandName}

@@ -13,9 +13,9 @@ const Login = (props) => {
 
     return (
         <div id="container" >
-            <img class="imgBackground" src="https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-            <div onClick={handleSubmit} class="pulse"></div>
-            <div class="dot"></div>
+            <img className="imgBackground" src="https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+            <div onClick={handleSubmit} className="pulse"></div>
+            <div className="dot"></div>
         </div>
     );
 }
