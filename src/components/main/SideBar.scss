@@ -2,12 +2,12 @@
 
 .sideBarContent {
     transition: 0.5s;
-    border-right: 2px solid black;
     width: 40%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 
 .sideBarContent:hover {
