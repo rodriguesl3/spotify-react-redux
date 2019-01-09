@@ -8,10 +8,10 @@ export const NavBar = (props) => {
         <div>
             
             <nav className="navbar navbar-dark bg-dark">
-                <a href="#" className="navbar-brand">
+                {/* <a href="/login" className="navbar-brand">
                     {props.brandName}
                     <img src={logo} alt="Brand Icon" />
-                </a>
+                </a> */}
             </nav>
         </div>
     )
