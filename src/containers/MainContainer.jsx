@@ -31,7 +31,7 @@ class MainContainer extends Component {
       <div>
         {this.props.spotifyUserInfo && this.props.followingArtist &&
           <div className="row">
-            <div className="col-sm-4">
+            <div className="col-sm-3">
               <SideBar spotifyUserInfo={this.props.spotifyUserInfo}
                 onGetFollowingArtist={this.props.onGetFollowingArtist} />
             </div>

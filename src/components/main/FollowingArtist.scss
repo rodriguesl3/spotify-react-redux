@@ -1,9 +1,44 @@
 .card {
-    transition: 0.3s;
+    transition: 0.5s;
+    height: 240px;
+    width: 190px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    align-items: center;
+    justify-items: center;
+    background-color: #020200;
+    border-color: lightgray;
+    
 }
 
+
+
+
 .card:hover {
+    height: 350px;
+    widows: 100%;
+    border-radius: 0;
     -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.card-img-top {
+    border-radius: 2000px;
+}
+
+
+.card:hover .card-img-top {
+    transition: 0.4s;
+    border-radius: 0;
+}
+
+.card:hover .card-body {
+    display: block;
+    margin-top: -10px;
+}
+
+.card-body {
+    display: none;
 }

@@ -14,7 +14,7 @@ export const SideBar = (props) => {
     }
 
     return (
-        <div className="container">
+        <div>
             <div className="row sideBarContent">
                 <img src={(spotifyUserInfo)
                     ? (spotifyUserInfo.images[0].url)

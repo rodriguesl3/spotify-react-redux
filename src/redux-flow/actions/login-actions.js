@@ -1,13 +1,14 @@
 import {
     USER_AUTHENTICATION,
-    ADD_CREDENTIALS
+    ADD_CREDENTIALS,
+    LOGIN_TOKEN
 } from "../../constants";
 import Axios from "axios";
 
 
 export const submitCredentials = (credentials, history) => {
     return dispatch => {
-        return Axios.get("https://localhost:5001/api/token").
+        return Axios.get(LOGIN_TOKEN).
         then(response => {
 
             let win = window.open(response.data, '', 'location=no,toolbar=0');
