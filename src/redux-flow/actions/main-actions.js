@@ -14,7 +14,7 @@ export const getUserInfo = (history) => {
         return get(selfInformation)
             .then(response => {
                 console.log(response);
-                if (response.status == 200) {
+                if (response.status === 200) {
                     dispatch({
                         type: USER_INFORMATION,
                         payload: response.data
@@ -24,7 +24,7 @@ export const getUserInfo = (history) => {
                 }
             })
             .catch((error) => {
-                if (error.response.status == 401) {
+                if (error.response.status === 401) {
                     history.push('/login');
                 }
             })

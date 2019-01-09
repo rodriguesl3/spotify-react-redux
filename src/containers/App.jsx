@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './App.css';
 import thunk from 'redux-thunk';
@@ -10,10 +10,6 @@ import rootReducers from '../redux-flow/reducers/index'
 import { NavBar } from '../components/navbar'
 import Login from './Authenticate'
 import MainContainer from './MainContainer';
-
-import createBrowserHistory from "history/createBrowserHistory";
-
-const history = createBrowserHistory();
 
 const store = createStore(rootReducers,
   compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())

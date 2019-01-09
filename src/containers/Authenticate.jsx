@@ -1,5 +1,3 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Login from '../components/Login';
 import { submitCredentials, addCredentials } from '../redux-flow/actions/login-actions'

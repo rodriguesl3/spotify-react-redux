@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 import { UserInfo } from '../components/main/UserInfo';
 import { getUserInfo, followingArtist } from '../redux-flow/actions/main-actions';
