@@ -1,0 +1,32 @@
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 10%;
+}
+
+.link {
+    width: 50%;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+     height: 5vmin;
+  }
+
+
+
+
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

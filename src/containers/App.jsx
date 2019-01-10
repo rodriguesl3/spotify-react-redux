@@ -19,9 +19,9 @@ const store = createStore(rootReducers,
 const App = () => {
   return (
     <Provider store={store}>
-      <NavBar brandName="N2L" />
       <Router>
         <div>
+          <NavBar brandName="N2L" />
           <Route path="/login" component={Login} />
           <Route path="/main" component={MainContainer} />
         </div>
