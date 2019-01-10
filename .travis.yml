@@ -10,4 +10,4 @@ deploy:
   domain: spotify-react-redux.surge.sh
   project: ./build/
 on:
-  branch: develop
+  all_branches: true
