@@ -7,9 +7,9 @@ script:
 
 addons:
   sonarcloud:
-    organization: "rodriguesl3-github"
+    organization: "rodriguesl3_spotify-react-redux"
   token:
-    secure: SONAR_TOKEN
+    secure: ${SONAR_TOKEN}
 script:
   - sonar-scanner
 deploy:
