@@ -1,3 +1,7 @@
+dist: trusty
+sudo: required
+
+
 language: node_js
 node_js:
   - "stable"
@@ -10,6 +14,10 @@ addons:
     organization: "rodriguesl3_spotify-react-redux"
   token:
     secure: ${SONAR_TOKEN}
+
+jdk:
+  - oraclejdk8
+
 script:
   - sonar-scanner
 deploy:
