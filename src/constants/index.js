@@ -6,9 +6,9 @@ export const ARTIST_FOLLOWED = "ARTIST_FOLLOWED";
 
 
 
-// export const LOGIN_TOKEN = 'https://localhost:5001/api/token';
-//export const LOGIN_TOKEN = 'https://spotify-server-auth20190105105435.azurewebsites.net/api/token';
-export const LOGIN_TOKEN = 'https://spotifyauth.azurewebsites.net/api/token'
+ export const LOGIN_TOKEN = 'https://localhost:5001/api/token';
 
+//export const LOGIN_TOKEN = 'https://spotifyauth.azurewebsites.net/api/token'
+//https://localhost:5001/api/values
 export const selfInformation = 'https://api.spotify.com/v1/me';
 export const following_information = 'https://api.spotify.com/v1/me/following';

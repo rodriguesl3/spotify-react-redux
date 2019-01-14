@@ -4,6 +4,10 @@ node_js:
 
 script:
   - npm run build
+
+addons:
+  sonarcloud:
+    organization: "rodriguesl3-github"
 deploy:
   provider: surge
   skip_cleanup: true

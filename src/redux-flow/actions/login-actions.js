@@ -8,7 +8,7 @@ import Axios from "axios";
 
 export const submitCredentials = (credentials, history) => {
     return dispatch => {
-        return Axios.get(LOGIN_TOKEN).then(response => {
+        return Axios.get(isDevelopmentEnvironment()).then(response => {
 
             let win = window.open(response.data, '', 'location=no,toolbar=0');
 
@@ -33,6 +33,14 @@ export const submitCredentials = (credentials, history) => {
     }
 }
 
+
+
+const isDevelopmentEnvironment = () => {
+    if(window.location.origin.indexOf("localhost") >= 0)
+        return LOGIN_TOKEN+"?development=true";
+    else
+        return LOGIN_TOKEN;
+}
 
 const isValidUrlHandle = (win) => {
     try {
