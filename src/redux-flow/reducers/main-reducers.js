@@ -4,6 +4,9 @@ import {
 } from '../../constants/index'
 
 export const userInformation = (state, action) => {
+    if(!state){
+        state = []
+    }
     switch (action.type) {
         case USER_INFORMATION:
             return {

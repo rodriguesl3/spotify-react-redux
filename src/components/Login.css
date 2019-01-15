@@ -1,0 +1,116 @@
+@charset "UTF-8";
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgUp {
+  width: 100%;
+  background-size: cover;
+}
+
+.imgDown {
+  width: 100%;
+  background-size: cover;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: #161925;
+  position: absolute;
+}
+
+.pulse {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #28a745;
+  border-radius: 100px;
+  background-color: #1e7e34;
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pulse::after {
+  content: "Login";
+}
+
+.pulse:hover::after {
+  content: "Vamos lá?";
+}
+
+.pulse:hover {
+  width: 300px;
+  height: 100px;
+}
+
+.pulse:hover ~ .dot {
+  width: 400px;
+  height: 200px;
+}
+
+.dot {
+  border: 10px solid black;
+  background: transparent;
+  border-radius: 650px;
+  height: 400px;
+  width: 400px;
+  -webkit-animation: pulse 3s ease-out;
+  animation: pulse 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  position: absolute;
+}
+
+@-webkit-keyframes "pulse" {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+  }
+  50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+  }
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.1;
+  }
+}
+/*# sourceMappingURL=Login.css.map */
