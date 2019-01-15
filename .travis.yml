@@ -19,7 +19,7 @@ jdk:
   - oraclejdk8
 
 script:
-  - sonar-scanner
+  - sonar-scanner -X
 deploy:
   provider: surge
   skip_cleanup: true
