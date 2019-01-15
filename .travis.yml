@@ -11,7 +11,7 @@ script:
 
 addons:
   sonarcloud:
-    organization: "rodriguesl3_spotify-react-redux"
+    organization: "rodriguesl3-github"
   token:
     secure: ${SONAR_TOKEN}
 
