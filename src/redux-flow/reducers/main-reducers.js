@@ -3,7 +3,7 @@ import {
     ARTIST_FOLLOWED
 } from '../../constants/index'
 
-export const userInformation = (state = [], action) => {
+export const userInformation = (state, action) => {
     switch (action.type) {
         case USER_INFORMATION:
             return {
