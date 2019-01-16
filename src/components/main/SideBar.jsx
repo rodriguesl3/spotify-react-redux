@@ -7,28 +7,27 @@ const imageUrl = "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact
 
 
 export const SideBar = (props) => {
-    const { spotifyUserInfo, onGetFollowingArtist } = props;
+    const { spotifyUserInfo, showSideBar, onShowSideBar } = props;
 
-    const GetFollowingArtistHandle = () => {
-        onGetFollowingArtist();
+    const hideSideBarHandle = () => {
+        onShowSideBar(false);
     }
 
     return (
         <div>
-            <div className="row sideBarContent">
-                <img src={(spotifyUserInfo)
-                    ? (spotifyUserInfo.images[0].url)
-                    : (imageUrl)} alt=""
-                    className="col-sm-5 imageProfile"
-                />
-
-                <div className="col-sm-12 userName">
-                    {spotifyUserInfo.display_name}
+            {showSideBar &&
+                <div className="row sideBarContent">
+                    <button onClick={hideSideBarHandle}>close</button>
+                    <div className="col-12 userName">
+                        <img src={(spotifyUserInfo)
+                            ? (spotifyUserInfo.images[0].url)
+                            : (imageUrl)} alt=""
+                            className="imageProfile"
+                        />
+                        <p>{spotifyUserInfo.display_name}</p>
+                    </div>
                 </div>
-                <div className="row sideBarList">
-                    <div className="col-sm-6" onClick={GetFollowingArtistHandle}>Artists Following</div>
-                </div>
-            </div>
+            }
         </div>
     )
 }

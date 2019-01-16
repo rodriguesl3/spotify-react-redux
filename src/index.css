@@ -7,6 +7,10 @@ body {
   background: #23395B;
 }
 
+body .root {
+  overflow: hidden;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

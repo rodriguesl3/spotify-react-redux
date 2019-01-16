@@ -1,36 +1,28 @@
 
+@import "../../base.scss";
 
 .sideBarContent {
     transition: 0.5s;
-    width: 40%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-}
-
-.sideBarContent:hover {
     width: 80%;
-}
-
-.sideBarContent:hover .userName {
+    height: 100vh;
     display: flex;
-    font-size: 30px;
+    margin-left: 0;
+    background-color: $base-color;
+    position: absolute;
+    z-index: 1;
 }
 
 .imageProfile {
-    background-size: cover;
-    width: 63%;
-    max-width: 150px;
     border-radius: 500px;
     padding: 20px;
+    margin: 10px 20px 10px 10%;
+    height: 200px;
+    width: 200px;
 }
 
 .userName {
-    display: none;
-    justify-content: center;
-    align-content: center;
-    font-size: 15px;
+    justify-items: center;
+    align-items: center;
+    font-size: 30px;
     transition: 0.7s;
 }

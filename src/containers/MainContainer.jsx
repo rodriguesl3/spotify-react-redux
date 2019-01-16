@@ -3,9 +3,12 @@ import React, { Component } from 'react'
 
 import { UserInfo } from '../components/main/UserInfo';
 import { getUserInfo, followingArtist } from '../redux-flow/actions/main-actions';
+import { showHideSideBar } from '../redux-flow/actions/sidebar-actions';
 import { withRouter } from 'react-router-dom'
 import { SideBar } from '../components/main/SideBar';
+import { NavBar } from '../components/navbar'
 import { FollowingArtists } from '../components/main/FollowingArtist';
+
 
 
 
@@ -16,11 +19,11 @@ class MainContainer extends Component {
   //   prop: PropTypes
   // }
 
-  
+
   componentDidMount() {
     this.props.onGetFollowingArtist();
     this.props.onGetUserInfo(this.props.history);
-   
+
   }
 
 
@@ -28,22 +31,25 @@ class MainContainer extends Component {
     return (
 
       <div>
+        <NavBar brandName="N2L"
+          showSideBar={this.props.sideBar}
+          onShowSideBar={this.props.onShowSideBar} />
+
         {this.props.spotifyUserInfo && this.props.followingArtist &&
           <div className="row">
-            <div className="col-sm-3">
+            <div className="col-10 col-sm-4">
               <SideBar spotifyUserInfo={this.props.spotifyUserInfo}
-                onGetFollowingArtist={this.props.onGetFollowingArtist} />
+                showSideBar={this.props.sideBar.showSideBar}
+                onShowSideBar={this.props.onShowSideBar} />
             </div>
-            <div className="col-sm-8">
+            <div className="col-10 col-sm-8">
               <UserInfo
                 spotifyUserInfo={this.props.spotifyUserInfo}
               />
               <FollowingArtists followingArtist={this.props.followingArtist} />
             </div>
           </div>
-
         }
-
       </div>
 
     )
@@ -55,12 +61,14 @@ const mapStateToProps = (state, ownProps) => ({
   isAuthenticated: state.userName === "Lucas",
   spotifyAuth: state.authentication.spotifyAuth,
   spotifyUserInfo: state.userInformation.spotifyUserInfo,
-  followingArtist: state.userInformation.followingArtist
+  followingArtist: state.userInformation.followingArtist,
+  sideBar: state.showSideBar
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onGetUserInfo: (history) => dispatch(getUserInfo(history)),
-  onGetFollowingArtist: () => dispatch(followingArtist())
+  onGetFollowingArtist: () => dispatch(followingArtist()),
+  onShowSideBar: (showHide) => dispatch(showHideSideBar(showHide)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(MainContainer))
