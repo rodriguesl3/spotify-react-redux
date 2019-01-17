@@ -42,7 +42,7 @@ class MainContainer extends Component {
                 showSideBar={this.props.sideBar.showSideBar}
                 onShowSideBar={this.props.onShowSideBar} />
             </div>
-            <div className="col-10 col-sm-8">
+            <div className="col-10 col-sm-8" style={{marginLeft: '20px'}}>
               <UserInfo
                 spotifyUserInfo={this.props.spotifyUserInfo}
               />

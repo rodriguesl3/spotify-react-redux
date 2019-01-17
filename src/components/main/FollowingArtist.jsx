@@ -16,11 +16,34 @@ export const FollowingArtists = (props) => {
             {!followingArtist && <div>Loading</div>}
             <div className="row">
                 {followingArtist && followingArtist.artists.items.map((item, index) => {
-                    return <div className="col-6 col-sm-4 col-lg-3" key={index}>
-                        <div className="card">
-                            <img src={item.images[2].url} className="card-img-top" alt={item.name} />
-                            <h5 className="card-title">{item.name}</h5>
-                            <div className="card-body">
+                    return <div className="col-10 col-sm-4 col-lg-3 card-react" key={index}>
+                        <div className="row">
+                            <div className="col-6">
+                                <img src={item.images[2].url} className="card-img-top" alt={item.name} />
+                            </div>
+                            <div className="col-6">
+                                <div className="row">
+                                    <div className="col-12">
+                                        <h5 className="card-title">{item.name}</h5>
+                                        Popularity:
+                                        </div>
+                                    <div className="col-12">
+                                        <RatingStart ratingValue={item.popularity} />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="card-text row">
+                                        <p className="col-1"><GoThumbsup /> </p>
+                                        <p className="col-9">{item.followers.total}</p>
+                                    </div>
+                                    <button className="btn btn-success">More in <FaSpotify /></button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* <h5 className="card-title">{item.name}</h5> */}
+                        {/* <div className="card-body">
                                 <div className="complement">
                                     <div className="card-text row">
                                         <div className="col-8">
@@ -37,9 +60,9 @@ export const FollowingArtists = (props) => {
                                     </div>
                                     <button className="btn btn-success">More in <FaSpotify /></button>
                                 </div>
-                            </div>
-                        </div>
+                            </div> */}
                     </div>
+                    // </div>
                 })}
             </div>
         </div>

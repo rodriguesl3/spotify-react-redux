@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { MdClose } from 'react-icons/md/index';
 
 import './SideBar.scss';
 
@@ -14,20 +14,18 @@ export const SideBar = (props) => {
     }
 
     return (
-        <div>
-            {showSideBar &&
-                <div className="row sideBarContent">
-                    <button onClick={hideSideBarHandle}>close</button>
-                    <div className="col-12 userName">
-                        <img src={(spotifyUserInfo)
-                            ? (spotifyUserInfo.images[0].url)
-                            : (imageUrl)} alt=""
-                            className="imageProfile"
-                        />
-                        <p>{spotifyUserInfo.display_name}</p>
-                    </div>
-                </div>
-            }
+        <div className={"row " + (!showSideBar ? "sideBarContent" : "sideBarContent-full")}>
+            <div className="col-12 userName">
+                <span onClick={hideSideBarHandle} className="col-2 offset-9 closeButton">
+                    <MdClose />
+                </span>
+                <img src={(spotifyUserInfo)
+                    ? (spotifyUserInfo.images[0].url)
+                    : (imageUrl)} alt=""
+                    className="imageProfile"
+                />
+                <p>{spotifyUserInfo.display_name}</p>
+            </div>
         </div>
     )
 }

@@ -1,3 +1,24 @@
+@import "../../base.scss";
+
+.card-react {
+    background-color: $alternative-color;
+    margin: 20px 20px 20px 40px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card {
     transition: 0.5s;
     height: 240px;
@@ -6,12 +27,10 @@
     border-radius: 30px;
     align-items: center;
     justify-items: center;
-    background-color: #020200;
-    border-color: lightgray;
-    
+    background-color: $base-color;
+    border-color: $component-color;
+    color: $component-color;
 }
-
-
 
 
 .card:hover {
@@ -21,11 +40,15 @@
     -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
-
 }
 
 .card-img-top {
-    border-radius: 2000px;
+    width: 111%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    position: absolute;
+    left: -34px;
+    border-radius: 25px;
 }
 
 
