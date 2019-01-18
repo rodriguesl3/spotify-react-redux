@@ -25,6 +25,13 @@
   -webkit-animation: App-logo-spin infinite 20s linear;
           animation: App-logo-spin infinite 20s linear;
   height: 5vmin;
+  height: 30px;
+}
+
+.profileIcon {
+  color: white;
+  height: 2em;
+  width: 2em;
 }
 
 @-webkit-keyframes App-logo-spin {

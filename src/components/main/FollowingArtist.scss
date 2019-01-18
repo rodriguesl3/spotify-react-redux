@@ -7,61 +7,54 @@
     border-radius: 25px;
 }
 
+// .card {
+//     transition: 0.5s;
+//     height: 240px;
+//     width: 190px;
+//     margin-bottom: 30px;
+//     border-radius: 30px;
+//     align-items: center;
+//     justify-items: center;
+//     border-color: $component-color;
+//     color: $component-color;
+// }
 
 
+// .card:hover {
+//     height: 350px;
+//     widows: 100%;
+//     border-radius: 0;
+//     -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+//     -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+//     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+// }
+
+// .card-img-top {
+//     width: 111%;
+//     border-top-left-radius: calc(.25rem - 1px);
+//     border-top-right-radius: calc(.25rem - 1px);
+//     position: absolute;
+//     left: -34px;
+//     border-radius: 25px;
+//     height: 160px;
+// }
 
 
+// .card:hover .card-img-top {
+//     transition: 0.4s;
+//     border-radius: 0;
+// }
+
+// .card:hover .card-body {
+//     display: block;
+//     margin-top: -10px;
+// }
+
+// .card-body {
+//     display: none;
+// }
 
 
-
-
-
-
-
-
-.card {
-    transition: 0.5s;
-    height: 240px;
-    width: 190px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    align-items: center;
-    justify-items: center;
-    background-color: $base-color;
-    border-color: $component-color;
-    color: $component-color;
-}
-
-
-.card:hover {
-    height: 350px;
-    widows: 100%;
-    border-radius: 0;
-    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
-}
-
-.card-img-top {
-    width: 111%;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
-    position: absolute;
-    left: -34px;
-    border-radius: 25px;
-}
-
-
-.card:hover .card-img-top {
-    transition: 0.4s;
-    border-radius: 0;
-}
-
-.card:hover .card-body {
-    display: block;
-    margin-top: -10px;
-}
-
-.card-body {
-    display: none;
-}
+// .title {
+//     color: $component-color;
+// }

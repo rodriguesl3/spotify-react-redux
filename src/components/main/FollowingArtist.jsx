@@ -11,8 +11,7 @@ export const FollowingArtists = (props) => {
 
     return (
         <div>
-            Welcome
-            spotify User Information
+            <h3 className="title">That is your idol list...</h3>
             {!followingArtist && <div>Loading</div>}
             <div className="row">
                 {followingArtist && followingArtist.artists.items.map((item, index) => {
@@ -34,33 +33,12 @@ export const FollowingArtists = (props) => {
                                 <div className="row">
                                     <div className="card-text row">
                                         <p className="col-1"><GoThumbsup /> </p>
-                                        <p className="col-9">{item.followers.total}</p>
+                                        <p className="col-8">{item.followers.total}</p>
                                     </div>
                                     <button className="btn btn-success">More in <FaSpotify /></button>
                                 </div>
                             </div>
-
                         </div>
-
-                        {/* <h5 className="card-title">{item.name}</h5> */}
-                        {/* <div className="card-body">
-                                <div className="complement">
-                                    <div className="card-text row">
-                                        <div className="col-8">
-                                            Popularity:
-                                        </div>
-                                        <div className="col-8">
-                                            <RatingStart ratingValue={item.popularity} />
-                                        </div>
-
-                                    </div>
-                                    <div className="card-text row">
-                                        <p className="col-1"><GoThumbsup /> </p>
-                                        <p className="col-9">{item.followers.total}</p>
-                                    </div>
-                                    <button className="btn btn-success">More in <FaSpotify /></button>
-                                </div>
-                            </div> */}
                     </div>
                     // </div>
                 })}

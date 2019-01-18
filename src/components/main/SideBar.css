@@ -2,29 +2,43 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 80%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 10px;
-  background-color: #23395B;
+  margin-left: 0;
+  background-color: #1A181B;
+  position: absolute;
+  z-index: 1;
+  left: -269px;
+  color: #F6E8EA;
+}
+
+.sideBarContent-full {
+  width: 80%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 80%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+  background-color: #1A181B;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  color: #F6E8EA;
+}
+
+.sideBarContent-full .closeButton {
+  height: 50px;
+  margin-top: 25px;
 }
 
 .imageProfile {
-  background-size: cover;
-  width: 100%;
-  max-width: 150px;
   border-radius: 500px;
-  padding: 20px;
+  margin: 10px 20px 10px 10%;
 }
 
 .userName {
@@ -35,5 +49,6 @@
   font-size: 30px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=SideBar.css.map */

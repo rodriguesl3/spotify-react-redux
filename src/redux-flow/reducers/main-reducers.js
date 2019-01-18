@@ -1,10 +1,11 @@
 import {
     USER_INFORMATION,
-    ARTIST_FOLLOWED
+    ARTIST_FOLLOWED,
+    USER_LISTENING
 } from '../../constants/index'
 
 export const userInformation = (state, action) => {
-    if(!state){
+    if (!state) {
         state = []
     }
     switch (action.type) {
@@ -17,6 +18,11 @@ export const userInformation = (state, action) => {
             return {
                 ...state,
                 followingArtist: action.payload
+            }
+        case USER_LISTENING:
+            return {
+                ...state,
+                userListening: action.payload
             }
         default:
             return state;
