@@ -1,0 +1,19 @@
+@import "../../base.scss";
+
+
+.custom-card {
+    background-color: $base-color;
+    margin: 20px 20px 20px 40px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.card-img-top {
+    width: 111%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    position: absolute;
+    left: -34px;
+    border-radius: 25px;
+    height: 160px;
+}

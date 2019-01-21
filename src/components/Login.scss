@@ -1,7 +1,10 @@
-body {
-    background-color: black;
-    color: gray;
-}
+$primary-color: #161925;
+$accent-color: #23395B;
+$alternative-color: #406e8e;
+$base-color:#8EA8C3;
+$component-color:#CBF7ED;
+
+
 
 #container {
     display: flex;
@@ -10,15 +13,31 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
+
+
 }
 
-.imgBackground {
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+
+.imgUp {
     width: 100%;
+    background-size: cover;
 }
 
+.imgDown {
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+.content {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: $primary-color;
+    position: absolute;
+}
 
 
 .pulse {

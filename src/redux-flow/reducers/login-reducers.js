@@ -3,7 +3,10 @@ import {
     ADD_CREDENTIALS
 } from "../../constants/index";
 
-export const authentication = (state = [], action) => {
+export const authentication = (state, action) => {
+    if(!state){
+        state = []
+    }
     switch (action.type) {
         case USER_AUTHENTICATION:
             return { ...state,

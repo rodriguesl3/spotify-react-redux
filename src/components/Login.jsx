@@ -11,10 +11,15 @@ const Login = (props) => {
     }
 
     return (
-        <div id="container" >
-            <img className="imgBackground" src="https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-            <div onClick={handleSubmit} className="pulse"></div>
-            <div className="dot"></div>
+        <div>
+            <div className="content">
+            <img src="https://wallpapercave.com/wp/EYS4oYf.jpg" className="imgUp" alt=""/>
+            </div>
+            <div id="container">
+            <img src="https://wallpapercave.com/wp/wp2130009.jpg" className="imgDown" alt=""/>
+                <div onClick={handleSubmit} className="pulse"></div>
+                <div className="dot"></div>
+            </div>
         </div>
     );
 }

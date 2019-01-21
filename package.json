@@ -26,6 +26,7 @@
   "devDependencies": {
     "axios": "^0.18.0",
     "history": "^4.7.2",
+    "jest": "^23.6.0",
     "node-sass": "^4.11.0",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",

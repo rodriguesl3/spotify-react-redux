@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from 'react-redux'
 import rootReducers from '../redux-flow/reducers/index'
 
-import { NavBar } from '../components/navbar'
+
 import Login from './Authenticate'
 import MainContainer from './MainContainer';
 
@@ -21,7 +21,6 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <div>
-          <NavBar brandName="N2L" />
           <Route path="/login" component={Login} />
           <Route path="/main" component={MainContainer} />
         </div>

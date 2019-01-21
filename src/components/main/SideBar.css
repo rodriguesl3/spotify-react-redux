@@ -1,0 +1,54 @@
+.sideBarContent {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 80%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+  background-color: #1A181B;
+  position: absolute;
+  z-index: 1;
+  left: -269px;
+  color: #F6E8EA;
+}
+
+.sideBarContent-full {
+  width: 80%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 80%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+  background-color: #1A181B;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  color: #F6E8EA;
+}
+
+.sideBarContent-full .closeButton {
+  height: 50px;
+  margin-top: 25px;
+}
+
+.imageProfile {
+  border-radius: 500px;
+  margin: 10px 20px 10px 10%;
+}
+
+.userName {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=SideBar.css.map */
