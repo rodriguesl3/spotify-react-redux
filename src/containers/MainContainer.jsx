@@ -1,6 +1,8 @@
 import { connect } from 'react-redux'
 import React, { Component } from 'react'
 
+import './MainContainer.scss';
+
 import { UserInfo } from '../components/main/UserInfo';
 import { getUserInfo, followingArtist, getUserListenNow } from '../redux-flow/actions/main-actions';
 import { showHideSideBar } from '../redux-flow/actions/sidebar-actions';

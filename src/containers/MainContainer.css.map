@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,iBAAiB,EAAE,yCAAyC;EAC5D,SAAS,EAAE,yCAAyC;CACvD",
+    "sources": [
+        "MainContainer.scss"
+    ],
+    "names": [],
+    "file": "MainContainer.css"
+}

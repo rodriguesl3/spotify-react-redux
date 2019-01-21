@@ -7,6 +7,22 @@
     border-radius: 25px;
 }
 
+.card-img-top {
+    width: 111%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    position: absolute;
+    left: -34px;
+    border-radius: 25px;
+    height: 160px;
+}
+
+.btn-success{
+    background-color: $accent-color;
+}
+
+
+
 // .card {
 //     transition: 0.5s;
 //     height: 240px;
@@ -29,15 +45,7 @@
 //     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
 // }
 
-// .card-img-top {
-//     width: 111%;
-//     border-top-left-radius: calc(.25rem - 1px);
-//     border-top-right-radius: calc(.25rem - 1px);
-//     position: absolute;
-//     left: -34px;
-//     border-radius: 25px;
-//     height: 160px;
-// }
+
 
 
 // .card:hover .card-img-top {

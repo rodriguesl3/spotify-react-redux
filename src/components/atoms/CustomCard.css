@@ -1,5 +1,5 @@
-.card-react {
-  background-color: #F6E8EA;
+.custom-card {
+  background-color: #001F54;
   margin: 20px 20px 20px 40px;
   padding: 20px;
   border-radius: 25px;
@@ -14,8 +14,4 @@
   border-radius: 25px;
   height: 160px;
 }
-
-.btn-success {
-  background-color: #17DA19;
-}
-/*# sourceMappingURL=FollowingArtist.css.map */
+/*# sourceMappingURL=CustomCard.css.map */

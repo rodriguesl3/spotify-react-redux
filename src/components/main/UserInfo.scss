@@ -2,16 +2,17 @@
 
 .user-content {
     color: $component-color;
+
     .card-player {
-        color:$base-color;
-    border-radius: 25px;
-    width: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        color: $base-color;
+        border-radius: 25px;
+        width: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-   
+
 
 }
 

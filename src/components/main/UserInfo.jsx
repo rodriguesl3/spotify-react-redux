@@ -2,9 +2,37 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './UserInfo.scss';
 
+import { CustomCard } from '../atoms/CustomCard';
+import { RatingStart } from '../atoms/RatingStar';
+
+import { FaRegPlayCircle, FaRegPauseCircle } from "react-icons/fa";
+
 export const UserInfo = (props) => {
   const { spotifyUserInfo, userListening } = props;
 
+  const renderCardHandle = () => {
+    return (
+      <div>
+        <span>
+          Device: {userListening.device.name}
+        </span>
+        <p>
+          Type: {userListening.device.type}
+        </p>
+        <div className="row">
+          <div className="col-1">
+            <p>
+              {userListening.is_playing ? <FaRegPlayCircle /> : <FaRegPauseCircle />}
+            </p>
+          </div>
+          <div className="col-9">
+            <span>{userListening.item.name}</span>
+          </div>
+        </div>
+        <span><RatingStart ratingValue={userListening.item.popularity} /></span>
+      </div>
+    );
+  }
 
   return (
     <div className="user-content">
@@ -13,29 +41,12 @@ export const UserInfo = (props) => {
       {userListening &&
         <div>
           <h5>That you are listen now?</h5>
-
-          <div className="card-player">
-            <div className="row">
-              <div className="col6">
-                <div>
-                  <img src={userListening.item.album.images[2].url} alt="" />
-                </div>
-              </div>
-              <div className="col6">
-                <p>
-                  {userListening.device.name}
-                </p>
-                <p>
-                  {userListening.device.type}
-                </p>
-                {userListening.is_playing ? "Playing" : "Stoped"}
-                <span>{userListening.item.name}</span>
-                <span>{userListening.item.popularity}</span>
-              </div>
-            </div>
-          </div>
-        </div>}
+          <CustomCard image={userListening.item.album.images[1].url}
+            content={renderCardHandle()} />
+        </div>
+      }
     </div>
+
   )
 }
 
