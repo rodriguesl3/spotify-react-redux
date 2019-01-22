@@ -1,20 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import logo from '../logo.svg';
-
-import { Link } from "react-router-dom";
+/* eslint-disable linebreak-style */
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { MdPerson } from 'react-icons/md/index';
-
+import logo from '../logo.svg';
 import './navbar.scss';
+import SearchSpotify from './atoms/Search';
 
-export const NavBar = (props) => {
+export default const NavBar = props => {
 
     const { brandName, onShowSideBar } = props;
 
-    const showSideBarHandle = () => {
-        onShowSideBar(true);
-    }
-
+    const showSideBarHandle = () => { onShowSideBar(true); };
 
     return (
         <div>
@@ -28,13 +25,15 @@ export const NavBar = (props) => {
                     </div>
                 </Link>
                 <span onClick={showSideBarHandle} className="profileIcon" >
-                <MdPerson size={30}/></span>
+                    <MdPerson size={30} />
+                </span>
+                <SearchSpotify />
             </nav>
         </div>
-    )
-}
+    );
+};
 
 NavBar.propTypes = {
     brandName: PropTypes.string.isRequired,
     imageSource: PropTypes.string,
-}
+};
