@@ -1,40 +1,35 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import logo from '../logo.svg';
+/* eslint-disable react/prop-types */
 
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { MdPerson } from 'react-icons/md/index';
-
+import logo from '../logo.svg';
 import './navbar.scss';
+import Search from './atoms/Search';
 
-export const NavBar = (props) => {
+const NavBar = (props) => {
+  const { brandName, onShowSideBar } = props;
+  const showSideBarHandle = () => { onShowSideBar(true); };
 
-    const { brandName, onShowSideBar } = props;
+  return (
+    <div>
+      <nav className="navbar navbar-dark bg-dark">
+        <Link to="/login" className="linkContainer">
+          <div className="link col-6">
+            {brandName}
+          </div>
+          <div className="link col-6">
+            <img src={logo} alt="Brand Icon" className="App-logo" />
+          </div>
+        </Link>
+        <span onClick={showSideBarHandle} className="profileIcon" role="presentation">
+          <MdPerson size={30} />
+        </span>
+        <Search />
+      </nav>
+    </div>
+  );
+};
 
-    const showSideBarHandle = () => {
-        onShowSideBar(true);
-    }
 
-
-    return (
-        <div>
-            <nav className="navbar navbar-dark bg-dark">
-                <Link to="/login" className="linkContainer">
-                    <div className="link col-6">
-                        {brandName}
-                    </div>
-                    <div className="link col-6">
-                        <img src={logo} alt="Brand Icon" className="App-logo" />
-                    </div>
-                </Link>
-                <span onClick={showSideBarHandle} className="profileIcon" >
-                <MdPerson size={30}/></span>
-            </nav>
-        </div>
-    )
-}
-
-NavBar.propTypes = {
-    brandName: PropTypes.string.isRequired,
-    imageSource: PropTypes.string,
-}
+export default NavBar;
