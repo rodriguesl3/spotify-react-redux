@@ -7,7 +7,7 @@ node_js:
   - "stable"
 
 script:
-  - npm run converage
+  - npm run coverage
   - npm run build
 
 addons:
