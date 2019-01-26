@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+// eslint-disable-next-line react/no-deprecated
+import React, { PropTypes } from 'react';
 import { MdClose } from 'react-icons/md/index';
 
 import './SideBar.scss';
@@ -9,8 +10,8 @@ const imageUrl = 'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact
 
 
 // eslint-disable-next-line import/prefer-default-export
-export const SideBar = (props) => {
-  const { spotifyUserInfo, showSideBar, onShowSideBar } = props;
+export const SideBar = ({ spotifyUserInfo, showSideBar, onShowSideBar }) => {
+  // const { spotifyUserInfo, showSideBar, onShowSideBar } = props;
 
   const hideSideBarHandle = () => {
     onShowSideBar(false);
@@ -30,7 +31,3 @@ export const SideBar = (props) => {
     </div>
   );
 };
-
-// SideBar.propTypes = {
-//     spotifyUserInfo: PropTypes.object.isRequired,
-// }

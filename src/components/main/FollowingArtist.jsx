@@ -1,10 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './FollowingArtist.scss';
 import { GoThumbsup } from 'react-icons/go';
 import { FaSpotify } from 'react-icons/fa';
 import { RatingStart } from '../atoms/RatingStar';
 import { CustomCard } from '../atoms/CustomCard';
+import NavBar from '../navbar';
 
 const FollowingArtists = (props) => {
   const { followingArtist } = props;
@@ -43,8 +44,8 @@ const FollowingArtists = (props) => {
         {followingArtist
           && followingArtist.artists
             .items
-            .map((item, index) => (
-              <CustomCard key={index} image={item.images[2].url} content={renderCustomCard(item)} />
+            .map(item => (
+              <CustomCard key={item.id} image={item.images[2].url} content={renderCustomCard(item)} />
             ))
         }
       </div>
@@ -52,6 +53,4 @@ const FollowingArtists = (props) => {
   );
 };
 
-// FollowingArtists.propTypes = {
-//   followingArtist: PropTypes.object,
-// };
+export default FollowingArtists;
