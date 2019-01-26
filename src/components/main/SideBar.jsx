@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 // eslint-disable-next-line react/no-deprecated
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { MdClose } from 'react-icons/md/index';
 
 import './SideBar.scss';
@@ -20,8 +20,6 @@ export const SideBar = ({ spotifyUserInfo, showSideBar, onShowSideBar }) => {
   return (
     <div className={`row ${!showSideBar ? 'sideBarContent' : 'sideBarContent-full'}`}>
       <div className="col-12 userName">
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events
         <span onClick={hideSideBarHandle} className="col-2 offset-9 closeButton">
           <MdClose />
         </span>

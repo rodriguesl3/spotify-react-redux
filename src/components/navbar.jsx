@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { MdPerson } from 'react-icons/md/index';
 import logo from '../logo.svg';
 import './navbar.scss';
-import SearchSpotify from './atoms/Search';
+import Search from './atoms/Search';
 
 const NavBar = (props) => {
   const { brandName, onShowSideBar } = props;
@@ -25,7 +25,7 @@ const NavBar = (props) => {
         <span onClick={showSideBarHandle} className="profileIcon" role="presentation">
           <MdPerson size={30} />
         </span>
-        <SearchSpotify />
+        <Search />
       </nav>
     </div>
   );

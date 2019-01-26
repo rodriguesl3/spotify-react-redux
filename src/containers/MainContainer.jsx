@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 
@@ -10,7 +11,7 @@ import { showHideSideBar } from '../redux-flow/actions/sidebar-actions';
 
 import { SideBar } from '../components/main/SideBar';
 import NavBar from '../components/navbar';
-import FollowingArtists from '../components/main/FollowingArtist';
+import FollowingArtists from '../components/main/FollowingArtists';
 
 const mapStateToProps = state => ({
   isAuthenticated: state.userName === 'Lucas',
@@ -30,15 +31,9 @@ const mapDispatchToProps = dispatch => ({
 
 class MainContainer extends Component {
   componentDidMount() {
-    const {
-      onGetFollowingArtist, onGetUserInfo, history,
-      onUserListening, sideBar, onShowSideBar,
-      userFollowingArtist, spotifyUserInfo, userListening,
-    } = this.props;
-
-    onGetFollowingArtist();
-    onGetUserInfo(history);
-    onUserListening();
+    this.props.onGetFollowingArtist();
+    this.props.onGetUserInfo(history);
+    this.props.onUserListening();
   }
 
   render() {
@@ -46,25 +41,25 @@ class MainContainer extends Component {
       <div>
         <NavBar
           brandName="N2L"
-          showSideBar={this.sideBar}
-          onShowSideBar={this.onShowSideBar}
+          showSideBar={this.props.sideBar}
+          onShowSideBar={this.props.onShowSideBar}
         />
-        {this.spotifyUserInfo && followingArtist
+        {this.props.spotifyUserInfo && this.props.followingArtist
           && (
             <div className="row">
               <div className="col-10 col-sm-4">
                 <SideBar
-                  spotifyUserInfo={this.spotifyUserInfo}
-                  showSideBar={this.sideBar.showSideBar}
-                  onShowSideBar={this.onShowSideBar}
+                  spotifyUserInfo={this.props.spotifyUserInfo}
+                  showSideBar={this.props.sideBar.showSideBar}
+                  onShowSideBar={this.props.onShowSideBar}
                 />
               </div>
               <div className="col-10 col-sm-8" style={{ marginLeft: '20px' }}>
                 <UserInfo
-                  spotifyUserInfo={this.spotifyUserInfo}
-                  userListening={this.userListening}
+                  spotifyUserInfo={this.props.spotifyUserInfo}
+                  userListening={this.props.userListening}
                 />
-                <FollowingArtists followingArtist={this.userFollowingArtist} />
+                <FollowingArtists followingArtist={this.props.userFollowingArtist} />
               </div>
             </div>
           )

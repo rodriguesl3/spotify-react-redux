@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MdSearch } from "react-icons/md";
 
-const SearchSpotify = () => {
+const Search = () => {
     return (
         <div>
             <MdSearch />
@@ -10,4 +10,4 @@ const SearchSpotify = () => {
     );
 }
 
-export default SearchSpotify;
+export default Search;

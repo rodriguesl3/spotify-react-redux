@@ -1,11 +1,10 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import './FollowingArtist.scss';
+import './FollowingArtists.scss';
 import { GoThumbsup } from 'react-icons/go';
 import { FaSpotify } from 'react-icons/fa';
 import { RatingStart } from '../atoms/RatingStar';
 import { CustomCard } from '../atoms/CustomCard';
-import NavBar from '../navbar';
 
 const FollowingArtists = (props) => {
   const { followingArtist } = props;
@@ -45,7 +44,11 @@ const FollowingArtists = (props) => {
           && followingArtist.artists
             .items
             .map(item => (
-              <CustomCard key={item.id} image={item.images[2].url} content={renderCustomCard(item)} />
+              <CustomCard
+                key={item.id}
+                image={item.images[2].url}
+                content={renderCustomCard(item)}
+              />
             ))
         }
       </div>
