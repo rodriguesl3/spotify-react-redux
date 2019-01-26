@@ -6,7 +6,7 @@ export const showSideBar = (state, action) => {
     if (!state) {
         state = [];
     }
-    if (SHOW_SIDEBAR == action.type) {
+    if (SHOW_SIDEBAR === action.type) {
         return { ...state,
             showSideBar: action.payload
         };

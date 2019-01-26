@@ -23,7 +23,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  onGetUserInfo: historyParam => dispatch(getUserInfo(historyParam)),
+  onGetUserInfo: history => dispatch(getUserInfo(history)),
   onGetFollowingArtist: () => dispatch(followingArtist()),
   onShowSideBar: showHide => dispatch(showHideSideBar(showHide)),
   onUserListening: () => dispatch(getUserListenNow()),
@@ -32,7 +32,7 @@ const mapDispatchToProps = dispatch => ({
 class MainContainer extends Component {
   componentDidMount() {
     this.props.onGetFollowingArtist();
-    this.props.onGetUserInfo(history);
+    this.props.onGetUserInfo(this.props.history);
     this.props.onUserListening();
   }
 
