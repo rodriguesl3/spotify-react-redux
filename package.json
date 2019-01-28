@@ -14,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "react-scripts test --env=jsdom --coverage",
+    "coverage": "react-scripts test --env=jsdom  --testResultsProcessor ./node_modules/jest-sonar-reporter/index.js",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -29,6 +30,7 @@
   "devDependencies": {
     "axios": "^0.18.0",
     "babel-eslint": "^10.0.1",
+    "coveralls": "^3.0.2",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -37,6 +39,7 @@
     "eslint-plugin-react": "^7.12.4",
     "history": "^4.7.2",
     "jest": "^23.6.0",
+    "jest-sonar-reporter": "^2.0.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react-redux": "^6.0.0",
@@ -46,5 +49,11 @@
     "react-test-renderer": "^16.7.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "testResults",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
   }
 }
