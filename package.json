@@ -51,7 +51,6 @@
     "redux-thunk": "^2.3.0"
   },
   "jestSonar": {
-    "sonar56x": true,
     "reportPath": "testResults",
     "reportFile": "sonar-report.xml",
     "indent": 4
