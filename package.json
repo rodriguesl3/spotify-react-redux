@@ -14,7 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "react-scripts test --env=jsdom --coverage",
+    "coverage": "react-scripts test --env=jsdom  --testResultsProcessor ./node_modules/jest-sonar-reporter/index.js",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "eject": "react-scripts eject"
   },
@@ -51,6 +51,7 @@
     "redux-thunk": "^2.3.0"
   },
   "jestSonar": {
+    "sonar56x": true,
     "reportPath": "testResults",
     "reportFile": "sonar-report.xml",
     "indent": 4
