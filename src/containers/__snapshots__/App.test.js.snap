@@ -1,5 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App snaphot 1`] = `<div />`;
-
 exports[`App snaphot test 1`] = `<div />`;
