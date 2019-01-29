@@ -16,6 +16,7 @@
     "test": "react-scripts test --env=jsdom",
     "testes": "node node_modules/jest/bin/jest.js --watch",
     "coveralls": " && cat ./tests/coverage/lcov.info | coveralls",
+    "coverage": "react-scripts test --env=jsdom  --testResultsProcessor ./node_modules/jest-sonar-reporter/index.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -49,5 +50,11 @@
     "react-test-renderer": "^16.7.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "clover.xml",
+    "indent": 4
   }
 }

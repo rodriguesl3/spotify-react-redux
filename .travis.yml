@@ -6,11 +6,8 @@ language: node_js
 node_js:
   - "stable"
 
-install:
-  - npm install
-
-script:
-  - npm test -- --coverage # Include coverage when running tests
+sscript:
+  - npm run coverage -- --coverage # Include coverage when running tests
   - npm run build
 
 addons:
@@ -23,7 +20,7 @@ jdk:
   - oraclejdk8
 
 script:
-  - sonar-scanner -X
+  - sonar-scanner
 deploy:
   provider: surge
   skip_cleanup: true
