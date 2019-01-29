@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Projetos\spotify-react-redux\src\redux-flow\actions\login-action.test.js">
-    <testCase name="is development environment" duration="3"/>
+    <testCase name="is development environment" duration="2"/>
   </file>
   <file path="C:\Projetos\spotify-react-redux\src\containers\App.test.jsx">
-    <testCase name="App snaphot test" duration="16"/>
+    <testCase name="App snaphot test" duration="15"/>
   </file>
 </testExecutions>
