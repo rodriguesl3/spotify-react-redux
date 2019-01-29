@@ -1,5 +1,5 @@
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/index.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/index.js
 FNF:0
 FNH:0
 DA:1,0
@@ -14,7 +14,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/secret.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/secret.js
 FNF:0
 FNH:0
 DA:1,0
@@ -26,7 +26,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/serviceWorker.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/serviceWorker.js
 FN:23,register
 FN:34,(anonymous_1)
 FN:43,(anonymous_2)
@@ -135,7 +135,7 @@ BRF:32
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/Login.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/Login.jsx
 FN:6,(anonymous_0)
 FN:9,(anonymous_1)
 FNF:2
@@ -154,7 +154,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/navbar.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/navbar.jsx
 FN:10,(anonymous_0)
 FN:12,(anonymous_1)
 FNF:2
@@ -171,7 +171,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/atoms/CustomCard.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/atoms/CustomCard.jsx
 FN:4,(anonymous_0)
 FNF:1
 FNH:0
@@ -185,7 +185,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/atoms/RatingStar.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/atoms/RatingStar.jsx
 FN:5,(anonymous_0)
 FNF:1
 FNH:0
@@ -199,7 +199,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/atoms/Search.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/atoms/Search.jsx
 FN:5,(anonymous_0)
 FNF:1
 FNH:0
@@ -212,7 +212,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/main/FollowingArtists.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/main/FollowingArtists.jsx
 FN:9,(anonymous_0)
 FN:12,(anonymous_1)
 FN:46,(anonymous_2)
@@ -237,7 +237,7 @@ BRF:4
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/main/SideBar.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/main/SideBar.jsx
 FN:13,(anonymous_0)
 FN:16,(anonymous_1)
 FNF:2
@@ -259,7 +259,7 @@ BRF:4
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/components/main/UserInfo.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/components/main/UserInfo.jsx
 FN:10,(anonymous_0)
 FN:13,(anonymous_1)
 FNF:2
@@ -284,7 +284,7 @@ BRF:6
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/constants/api.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/constants/api.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:0
@@ -297,7 +297,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/constants/index.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/constants/index.js
 FNF:0
 FNH:0
 DA:1,2
@@ -317,7 +317,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/containers/App.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/containers/App.jsx
 FN:24,(anonymous_0)
 FNF:1
 FNH:1
@@ -331,7 +331,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/containers/Authenticate.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/containers/Authenticate.jsx
 FN:8,(anonymous_0)
 FN:14,(anonymous_1)
 FN:15,(anonymous_2)
@@ -353,7 +353,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/containers/MainContainer.jsx
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/containers/MainContainer.jsx
 FN:16,(anonymous_0)
 FN:25,(anonymous_1)
 FN:26,(anonymous_2)
@@ -391,7 +391,7 @@ BRF:3
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/actions/login-actions.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/actions/login-actions.js
 FN:9,(anonymous_0)
 FN:10,(anonymous_1)
 FN:11,(anonymous_2)
@@ -440,7 +440,7 @@ BRF:4
 BRH:1
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/actions/main-actions.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/actions/main-actions.js
 FN:14,(anonymous_0)
 FN:15,(anonymous_1)
 FN:17,(anonymous_2)
@@ -497,7 +497,7 @@ BRF:8
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/actions/sidebar-actions.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/actions/sidebar-actions.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:0
@@ -510,7 +510,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/reducers/index.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/reducers/index.js
 FNF:0
 FNH:0
 LF:0
@@ -519,7 +519,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/reducers/login-reducers.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/reducers/login-reducers.js
 FN:6,(anonymous_0)
 FNF:1
 FNH:1
@@ -542,7 +542,7 @@ BRF:5
 BRH:2
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/reducers/main-reducers.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/reducers/main-reducers.js
 FN:7,(anonymous_0)
 FNF:1
 FNH:1
@@ -567,7 +567,7 @@ BRF:6
 BRH:2
 end_of_record
 TN:
-SF:/home/travis/build/rodriguesl3spotify-react-redux/src/redux-flow/reducers/sidebar-reducers.js
+SF:/home/travis/build/rodriguesl3/spotify-react-redux/src/redux-flow/reducers/sidebar-reducers.js
 FN:5,(anonymous_0)
 FNF:1
 FNH:1
