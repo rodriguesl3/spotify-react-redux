@@ -35,14 +35,14 @@ export const submitCredentials = (credentials, history) => {
 
 
 
-const isDevelopmentEnvironment = () => {
+export const isDevelopmentEnvironment = () => {
     if(window.location.origin.indexOf("localhost") >= 0)
         return LOGIN_TOKEN+"?development=true";
     else
         return LOGIN_TOKEN;
 }
 
-const isValidUrlHandle = (win) => {
+export const isValidUrlHandle = (win) => {
     try {
         return win.document.location.origin === window.location.origin
     } catch (error) {
