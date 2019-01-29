@@ -50,10 +50,5 @@
     "react-test-renderer": "^16.7.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
-  },
-  "jestSonar": {
-    "reportPath": "coverage",
-    "reportFile": "clover.xml",
-    "indent": 4
   }
 }
