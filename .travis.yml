@@ -7,7 +7,7 @@ node_js:
   - "stable"
 
 sscript:
-  - npm run coverage -- --coverage # Include coverage when running tests
+  - npm run coverage -- --watchAll # Include coverage when running tests
   - npm run build
 
 addons:
@@ -21,7 +21,7 @@ jdk:
 
 script:
   - sonar-scanner -X
-  
+
 deploy:
   provider: surge
   skip_cleanup: true
