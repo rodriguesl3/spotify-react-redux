@@ -56,8 +56,5 @@
     "reportPath": "coverage",
     "reportFile": "clover.xml",
     "indent": 4
-  },
-  "jest": {
-    "testResultsProcessor": "jest-sonar-reporter"
   }
 }
