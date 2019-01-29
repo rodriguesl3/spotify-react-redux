@@ -52,7 +52,6 @@
     "redux-thunk": "^2.3.0"
   },
   "jestSonar": {
-    "sonar56x": true,
     "reportPath": "coverage",
     "reportFile": "clover.xml",
     "indent": 4
