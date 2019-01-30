@@ -13,6 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "debug": "node --debug-brk --inspect ./node/modules/jest/bin/jest -i",
     "test": "react-scripts test --env=jsdom",
     "testes": "node node_modules/jest/bin/jest.js --watch",
     "coveralls": " && cat ./tests/coverage/lcov.info | coveralls",
