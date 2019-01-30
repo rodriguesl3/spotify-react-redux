@@ -6,7 +6,7 @@ language: node_js
 node_js:
   - "stable"
 
-sscript:
+script:
   - npm run coverage -- --coverage
   - npm run build
 
