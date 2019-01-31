@@ -41,15 +41,12 @@ export const followingArtist = () => (dispatch) => {
     });
 };
 
-export const getUserListenNow = () => {
-  return dispatch => get(userListening)
-    .then((response) => {
-      console.log(response.data);
-      if (response.status === 200) {
-        dispatch({
-          type: USER_LISTENING,
-          payload: response.data,
-        });
-      }
-    });
-};
+export const getUserListenNow = () => dispatch => get(userListening)
+  .then((response) => {
+    if (response.status === 200) {
+      dispatch({
+        type: USER_LISTENING,
+        payload: response.data,
+      });
+    }
+  });
