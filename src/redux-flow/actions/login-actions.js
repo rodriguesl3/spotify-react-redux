@@ -1,10 +1,13 @@
-import Axios from 'axios';
-
 import {
   USER_AUTHENTICATION,
   ADD_CREDENTIALS,
   LOGIN_TOKEN,
 } from '../../constants';
+
+import {
+  requestCredentials,
+} from '../../services/credentials';
+
 
 export const isDevelopmentEnvironment = () => {
   if (window.location.origin.indexOf('localhost') >= 0) {
@@ -21,8 +24,8 @@ export const isValidUrlHandle = (win) => {
   }
 };
 
-export const submitCredentials = (credentials, history) => dispatch => Axios
-  .get(isDevelopmentEnvironment()).then((response) => {
+export const submitCredentials = (credentials, history) => dispatch => requestCredentials()
+  .then((response) => {
     const win = window.open(response.data, '', 'location=no,toolbar=0');
 
     const polTimer = window.setInterval(() => {
