@@ -32,8 +32,13 @@ test('is valid url', () => {
 
 jest.mock('../../services/credentials');
 
-test('mocking async request', () => {
-  requestCredentials().then(response => expect(response).toHaveProperty(
-    'data', 'https://accounts.spotify.com/authorize?client_id=dc6af13b21094058a9b5e104eccee32e&response_type=code&redirect_uri=https://spotifyauth.azurewebsites.net/api/callback?development=true&scope=user-read-private%20user-read-email%20user-follow-read%20user-read-playback-state'
-  ));
+test('mocking async request', (done) => {
+  requestCredentials().then((response) => {
+    expect(response).toHaveProperty(
+      'data', 'https://accounts.spotify.com/authorize?client_id=dc6af13b21094058a9b5e104eccee32e&response_type=code&redirect_uri=https://spotifyauth.azurewebsites.net/api/callback?development=true&scope=user-read-private%20user-read-email%20user-follow-read%20user-read-playback-state'
+    );
+    expect(response).toHaveProperty('statusText', 'OKe');
+  });
+
+  done();
 });
