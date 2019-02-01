@@ -17,7 +17,7 @@ const Login = (props) => {
       </div>
       <div id="container">
         <img src="https://wallpapercave.com/wp/wp2130009.jpg" className="imgDown" alt="" />
-        <div onClick={handleSubmit} className="pulse" role="clickHandle" />
+        <div onClick={handleSubmit} className="pulse" />
         <div className="dot" />
       </div>
     </div>
