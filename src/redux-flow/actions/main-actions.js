@@ -13,6 +13,7 @@ import {
 
 export const getUserInfo = history => dispatch => get(selfInformation)
   .then((response) => {
+    console.log('UserInfo:', response);
     if (response.status === 200) {
       dispatch({
         type: USER_INFORMATION,
@@ -32,6 +33,7 @@ export const followingArtist = () => (dispatch) => {
   const fullUrl = `${followingInformation}?type=artist&limit=30`;
   return get(fullUrl)
     .then((response) => {
+      console.log('followingArtist:', response);
       if (response.status === 200) {
         dispatch({
           type: ARTIST_FOLLOWED,
@@ -43,6 +45,7 @@ export const followingArtist = () => (dispatch) => {
 
 export const getUserListenNow = () => dispatch => get(userListening)
   .then((response) => {
+    console.log('getUserListenNow', response);
     if (response.status === 200) {
       dispatch({
         type: USER_LISTENING,

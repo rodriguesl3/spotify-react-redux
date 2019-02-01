@@ -39,6 +39,5 @@ test('mocking async request', (done) => {
     );
     expect(response).toHaveProperty('statusText', 'OKe');
   });
-
   done();
 });

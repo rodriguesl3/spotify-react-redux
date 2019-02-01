@@ -5,16 +5,15 @@ import React, { Component } from 'react';
 import './MainContainer.scss';
 import { withRouter } from 'react-router-dom';
 
-import { UserInfo } from '../components/main/UserInfo';
-import { getUserInfo, followingArtist, getUserListenNow } from '../redux-flow/actions/main-actions';
-import { showHideSideBar } from '../redux-flow/actions/sidebar-actions';
+import UserInfo from '../../components/main/UserInfo/UserInfo';
+import { getUserInfo, followingArtist, getUserListenNow } from '../../redux-flow/actions/main-actions';
+import { showHideSideBar } from '../../redux-flow/actions/sidebar-actions';
 
-import { SideBar } from '../components/main/SideBar';
-import NavBar from '../components/navbar';
-import FollowingArtists from '../components/main/FollowingArtists';
+import { SideBar } from '../../components/main/SideBar/SideBar';
+import NavBar from '../../components/navbar';
+import FollowingArtists from '../../components/main/FollowingArtists/FollowingArtists';
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.userName === 'Lucas',
   spotifyAuth: state.authentication.spotifyAuth,
   spotifyUserInfo: state.userInformation.spotifyUserInfo,
   userFollowingArtist: state.userInformation.followingArtist,
@@ -44,7 +43,7 @@ class MainContainer extends Component {
           showSideBar={this.props.sideBar}
           onShowSideBar={this.props.onShowSideBar}
         />
-        {this.props.spotifyUserInfo && this.props.followingArtist
+        {this.props.spotifyUserInfo && this.props.userFollowingArtist
           && (
             <div className="row">
               <div className="col-10 col-sm-4">

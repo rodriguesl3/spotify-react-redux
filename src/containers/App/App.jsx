@@ -7,14 +7,11 @@ import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import rootReducers from '../redux-flow/reducers/index';
+import rootReducers from '../../redux-flow/reducers/index';
 
 
-import Login from './Authenticate';
-import MainContainer from './MainContainer';
-
-//  const w = window;
-
+import Login from '../Authenticate';
+import MainContainer from '../MainContainer/MainContainer';
 
 const store = createStore(rootReducers,
   compose(applyMiddleware(thunk)));

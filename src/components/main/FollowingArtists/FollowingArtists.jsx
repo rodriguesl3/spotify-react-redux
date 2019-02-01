@@ -3,8 +3,8 @@ import React from 'react';
 import './FollowingArtists.scss';
 import { GoThumbsup } from 'react-icons/go';
 import { FaSpotify } from 'react-icons/fa';
-import { RatingStart } from '../atoms/RatingStar';
-import { CustomCard } from '../atoms/CustomCard';
+import { RatingStart } from '../../atoms/RatingStar/RatingStar';
+import { CustomCard } from '../../atoms/CustomCard/CustomCard';
 
 const FollowingArtists = (props) => {
   const { followingArtist } = props;
