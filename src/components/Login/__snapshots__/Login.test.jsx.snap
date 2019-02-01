@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login snaphot test 1`] = `
+<div>
+  <div
+    className="content"
+  >
+    <img
+      alt=""
+      className="imgUp"
+      src="https://wallpapercave.com/wp/EYS4oYf.jpg"
+    />
+  </div>
+  <div
+    id="container"
+  >
+    <img
+      alt=""
+      className="imgDown"
+      src="https://wallpapercave.com/wp/wp2130009.jpg"
+    />
+    <div
+      className="pulse"
+      onClick={[Function]}
+      role="clickHandle"
+    />
+    <div
+      className="dot"
+    />
+  </div>
+</div>
+`;
