@@ -22,7 +22,6 @@ exports[`Login snaphot test 1`] = `
     <div
       className="pulse"
       onClick={[Function]}
-      role="clickHandle"
     />
     <div
       className="dot"
