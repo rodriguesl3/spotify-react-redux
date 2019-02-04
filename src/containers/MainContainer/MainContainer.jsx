@@ -10,7 +10,7 @@ import { getUserInfo, followingArtist, getUserListenNow } from '../../redux-flow
 import { showHideSideBar } from '../../redux-flow/actions/sidebar-actions';
 
 import { SideBar } from '../../components/main/SideBar/SideBar';
-import NavBar from '../../components/navbar';
+import NavBar from '../../components/atoms/NavBar/navbar';
 import FollowingArtists from '../../components/main/FollowingArtists/FollowingArtists';
 
 const mapStateToProps = state => ({

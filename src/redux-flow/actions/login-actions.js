@@ -10,6 +10,7 @@ import {
 
 
 export const isDevelopmentEnvironment = () => {
+  console.log(window.location.origin);
   if (window.location.origin.indexOf('localhost') >= 0) {
     return `${LOGIN_TOKEN}?development=true`;
   }

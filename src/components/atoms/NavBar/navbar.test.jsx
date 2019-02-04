@@ -2,12 +2,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import Login from './Login';
+import NavBar from './navbar';
 
-test('Login snaphot test', () => {
+
+test('SideBar snaphot test', () => {
   const component = renderer.create(
     <MemoryRouter>
-      <Login onSubmit={() => { }} />
+      <NavBar brandName="Spotify React" />
     </MemoryRouter>,
   );
   const tree = component.toJSON();

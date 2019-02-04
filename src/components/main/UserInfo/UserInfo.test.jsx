@@ -2,7 +2,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import UserInfo from './UserInfo';
-import { userInfo, userListening } from './mocks/objectsMocks';
+import { userInfo, userListening } from './__mocks__/objectsMocks';
 
 test('UserInfo snaphot test', () => {
   const component = renderer.create(

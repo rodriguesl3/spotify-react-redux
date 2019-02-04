@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatingStart snaphot test 1`] = `
+<div>
+  <div
+    class="stars-outer"
+  >
+    <div
+      class="stars-inner"
+      style={
+        Object {
+          "width": "7.5%",
+        }
+      }
+    />
+  </div>
+</div>
+`;

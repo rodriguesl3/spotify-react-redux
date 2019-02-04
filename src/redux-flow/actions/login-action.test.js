@@ -18,6 +18,13 @@ test('is development environment', () => {
   expect(url).toContain('development=true');
 });
 
+
+test('is not development environment', () => {
+  const url = isDevelopmentEnvironment();
+  expect(url).toContain('development=true');
+});
+
+
 test('is valid url', () => {
   const win = {
     document: {

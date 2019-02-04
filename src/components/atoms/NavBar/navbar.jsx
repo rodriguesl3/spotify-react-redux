@@ -3,9 +3,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MdPerson } from 'react-icons/md/index';
-import logo from '../logo.svg';
+import logo from '../../../logo.svg';
 import './navbar.scss';
-import Search from './atoms/Search';
+import Search from '../Search';
 
 const NavBar = (props) => {
   const { brandName, onShowSideBar } = props;
