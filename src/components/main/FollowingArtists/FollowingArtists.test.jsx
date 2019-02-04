@@ -13,7 +13,7 @@ test('FollowingArtists snaphot test', () => {
 
 
 test('FollowingArtists list of card', () => {
-  const component = renderer.create(<FollowingArtists followingArtists={followingArtists} />);
+  const component = renderer.create(<FollowingArtists followingArtists={followingArtists.data} />);
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
