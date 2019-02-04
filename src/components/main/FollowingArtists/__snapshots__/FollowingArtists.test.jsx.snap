@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`FollowingArtists list of card 1`] = `
+<div>
+  <h3
+    className="title"
+  >
+    That is your idol list...
+  </h3>
+  <div>
+    Loading
+  </div>
+  <div
+    className="row"
+  />
+</div>
+`;
+
 exports[`FollowingArtists snaphot test 1`] = `
 <div>
   <h3
