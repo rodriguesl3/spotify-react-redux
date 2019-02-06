@@ -6,6 +6,9 @@ import { FaSpotify } from 'react-icons/fa';
 import { RatingStart } from '../../atoms/RatingStar/RatingStar';
 import { CustomCard } from '../../atoms/CustomCard/CustomCard';
 
+import LoaderHOC from '../../atoms/Loading/LoadingHOC';
+
+
 const FollowingArtists = (props) => {
   const { followingArtist } = props;
 
@@ -38,22 +41,20 @@ const FollowingArtists = (props) => {
   return (
     <div>
       <h3 className="title">That is your idol list...</h3>
-      {!followingArtist && <div>Loading</div>}
       <div className="row">
-        {followingArtist
-          && followingArtist.artists
-            .items
-            .map(item => (
-              <CustomCard
-                key={item.id}
-                image={item.images[2].url}
-                content={renderCustomCard(item)}
-              />
-            ))
+        {followingArtist.artists
+          .items
+          .map(item => (
+            <CustomCard
+              key={item.id}
+              image={item.images[2].url}
+              content={renderCustomCard(item)}
+            />
+          ))
         }
       </div>
     </div>
   );
 };
 
-export default FollowingArtists;
+export default LoaderHOC('followingArtist', FollowingArtists);
