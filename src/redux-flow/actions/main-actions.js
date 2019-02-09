@@ -24,7 +24,7 @@ export const getUserInfo = history => dispatch => get(selfInformation)
     }
   })
   .catch((error) => {
-    if (error.response.status === 401) {
+    if (error.response && error.response.status && error.response.status === 401) {
       history.push('/login');
     }
   });

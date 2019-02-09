@@ -1,42 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideBar snaphot test 1`] = `
-<div
-  className="row sideBarContent-full"
->
+<section>
   <div
-    className="col-12 userName"
-  >
-    <span
-      className="col-2 offset-9 closeButton"
-      onClick={[Function]}
-    >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 24 24"
-        width="1em"
-      >
-        <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-        />
-      </svg>
-    </span>
-    <img
-      alt=""
-      className="imageProfile"
-      src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1084373748241702&height=200&width=200&ext=1551600776&hash=AeTTgzEoEZf2Z_uj"
-    />
-    <p>
-      Lucas Rodrigues
-    </p>
-  </div>
-</div>
+    className="load"
+    id="load1"
+  />
+  <div
+    className="load"
+    id="load2"
+  />
+  <div
+    className="load"
+    id="load3"
+  />
+  <div
+    className="load"
+    id="load4"
+  />
+  <div
+    className="load"
+    id="load5"
+  />
+</section>
 `;

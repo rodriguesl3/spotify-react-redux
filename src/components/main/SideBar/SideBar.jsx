@@ -5,14 +5,17 @@ import React from 'react';
 import { MdClose } from 'react-icons/md/index';
 
 import './SideBar.scss';
+import LoaderHOC from '../../atoms/Loading/LoaderHOC';
+import { CustomCard } from '../../atoms/CustomCard/CustomCard';
+import UserListen from '../../atoms/UserListen/UserListen';
 
 const imageUrl = 'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjY0q2jsMffAhXCvJAKHXo0B68QjRx6BAgBEAU&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FAnonymous&psig=AOvVaw0LvWcw8Dbz2hlIjV2raw_r&ust=1546253220121470';
 
 
 // eslint-disable-next-line import/prefer-default-export
-export const SideBar = ({ spotifyUserInfo, showSideBar, onShowSideBar }) => {
-  // const { spotifyUserInfo, showSideBar, onShowSideBar } = props;
-
+const SideBar = ({
+  spotifyUserInfo, showSideBar, onShowSideBar, userListening
+}) => {
   const hideSideBarHandle = () => {
     onShowSideBar(false);
   };
@@ -24,8 +27,17 @@ export const SideBar = ({ spotifyUserInfo, showSideBar, onShowSideBar }) => {
           <MdClose />
         </span>
         <img src={(spotifyUserInfo) ? (spotifyUserInfo.images[0].url) : (imageUrl)} alt="" className="imageProfile" />
-        <p>{spotifyUserInfo.display_name}</p>
+        <p>{(spotifyUserInfo) && spotifyUserInfo.display_name}</p>
+      </div>
+      <div className="col-12">
+        <CustomCard
+          image={userListening.item.album.images[1].url}
+        >
+          <UserListen userListening={userListening} />
+        </CustomCard>
       </div>
     </div>
   );
 };
+
+export default LoaderHOC('userListening', SideBar);

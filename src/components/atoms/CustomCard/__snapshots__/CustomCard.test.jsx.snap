@@ -18,9 +18,7 @@ exports[`CustomCard snaphot test 1`] = `
     </div>
     <div
       className="col-7"
-    >
-      teste
-    </div>
+    />
   </div>
 </div>
 `;

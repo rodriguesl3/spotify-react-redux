@@ -6,7 +6,7 @@ import { FaSpotify } from 'react-icons/fa';
 import { RatingStart } from '../../atoms/RatingStar/RatingStar';
 import { CustomCard } from '../../atoms/CustomCard/CustomCard';
 
-import LoaderHOC from '../../atoms/Loading/LoadingHOC';
+import LoaderHOC from '../../atoms/Loading/LoaderHOC';
 
 
 const FollowingArtists = (props) => {
@@ -48,8 +48,9 @@ const FollowingArtists = (props) => {
             <CustomCard
               key={item.id}
               image={item.images[2].url}
-              content={renderCustomCard(item)}
-            />
+            >
+              {renderCustomCard(item)}
+            </CustomCard>
           ))
         }
       </div>

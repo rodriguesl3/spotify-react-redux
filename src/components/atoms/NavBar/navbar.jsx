@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdPerson } from 'react-icons/md/index';
+import { MdPerson, MdSearch } from 'react-icons/md/index';
 import logo from '../../../logo.svg';
 import './navbar.scss';
-import Search from '../Search';
+// import Search from '../Search/Search';
 
 const NavBar = (props) => {
   const { brandName, onShowSideBar } = props;
@@ -25,11 +25,10 @@ const NavBar = (props) => {
         <span onClick={showSideBarHandle} className="profileIcon" role="presentation">
           <MdPerson size={30} />
         </span>
-        <Search />
+        <MdSearch />
       </nav>
     </div>
   );
 };
-
 
 export default NavBar;

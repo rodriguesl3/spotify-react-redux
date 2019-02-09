@@ -9,7 +9,7 @@ import UserInfo from '../../components/main/UserInfo/UserInfo';
 import { getUserInfo, followingArtist, getUserListenNow } from '../../redux-flow/actions/main-actions';
 import { showHideSideBar } from '../../redux-flow/actions/sidebar-actions';
 
-import { SideBar } from '../../components/main/SideBar/SideBar';
+import SideBar from '../../components/main/SideBar/SideBar';
 import NavBar from '../../components/atoms/NavBar/navbar';
 import FollowingArtists from '../../components/main/FollowingArtists/FollowingArtists';
 
@@ -43,26 +43,23 @@ class MainContainer extends Component {
           showSideBar={this.props.sideBar}
           onShowSideBar={this.props.onShowSideBar}
         />
-        {this.props.spotifyUserInfo && this.props.userFollowingArtist
-          && (
-            <div className="row">
-              <div className="col-10 col-sm-4">
-                <SideBar
-                  spotifyUserInfo={this.props.spotifyUserInfo}
-                  showSideBar={this.props.sideBar.showSideBar}
-                  onShowSideBar={this.props.onShowSideBar}
-                />
-              </div>
-              <div className="col-10 col-sm-8" style={{ marginLeft: '20px' }}>
-                <UserInfo
-                  spotifyUserInfo={this.props.spotifyUserInfo}
-                  userListening={this.props.userListening}
-                />
-                <FollowingArtists followingArtist={this.props.userFollowingArtist} />
-              </div>
-            </div>
-          )
-        }
+        <div className="row">
+          <div className="col-10 col-sm-4">
+            <SideBar
+              spotifyUserInfo={this.props.spotifyUserInfo}
+              showSideBar={this.props.sideBar.showSideBar}
+              onShowSideBar={this.props.onShowSideBar}
+              userListening={this.props.userListening}
+            />
+          </div>
+          <div className="col-10 col-sm-8" style={{ marginLeft: '20px' }}>
+            <UserInfo
+              spotifyUserInfo={this.props.spotifyUserInfo}
+              userListening={this.props.userListening}
+            />
+            <FollowingArtists followingArtist={this.props.userFollowingArtist} />
+          </div>
+        </div>
       </div>
     );
   }

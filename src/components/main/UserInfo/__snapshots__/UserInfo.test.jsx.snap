@@ -32,11 +32,11 @@ exports[`UserInfo snaphot test 1`] = `
         >
           <div>
             <span>
-              Device:
+              Device: 
               LAPTOP-RB4MNQUG
             </span>
             <p>
-              Type:
+              Type: 
               Computer
             </p>
             <div
@@ -76,10 +76,10 @@ exports[`UserInfo snaphot test 1`] = `
             <span>
               <div>
                 <div
-                  class="stars-outer"
+                  className="stars-outer"
                 >
                   <div
-                    class="stars-inner"
+                    className="stars-inner"
                     style={
                       Object {
                         "width": "62%",

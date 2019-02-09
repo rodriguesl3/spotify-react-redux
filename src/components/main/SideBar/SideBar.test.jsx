@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { SideBar } from './SideBar';
+import SideBar from './SideBar';
 import { userInfo } from '../UserInfo/__mocks__/objectsMocks';
 
 test('SideBar snaphot test', () => {

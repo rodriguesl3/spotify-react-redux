@@ -3,10 +3,10 @@
 exports[`RatingStart snaphot test 1`] = `
 <div>
   <div
-    class="stars-outer"
+    className="stars-outer"
   >
     <div
-      class="stars-inner"
+      className="stars-inner"
       style={
         Object {
           "width": "7.5%",
