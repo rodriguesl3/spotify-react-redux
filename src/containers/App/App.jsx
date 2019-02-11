@@ -13,10 +13,12 @@ import rootReducers from '../../redux-flow/reducers/index';
 import Login from '../Authenticate';
 import MainContainer from '../MainContainer/MainContainer';
 
-const store = createStore(rootReducers,
-  compose(applyMiddleware(thunk)));
-/* w.__REDUX_DEVTOOLS_EXTENSION__
-    && w.__REDUX_DEVTOOLS_EXTENSION__() */
+
+const store = createStore(rootReducers, compose(applyMiddleware(thunk)));
+
+// const store = createStore(rootReducers,
+//   compose(applyMiddleware(thunk),
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
 
 const App = () => (
   <Provider store={store}>

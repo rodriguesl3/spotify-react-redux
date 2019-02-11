@@ -14,3 +14,13 @@ test('SideBar snaphot test', () => {
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test('Search snaphot test', () => {
+  const component = renderer.create(
+    <MemoryRouter>
+      <NavBar brandName="Spotify React" isSearching />
+    </MemoryRouter>,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
