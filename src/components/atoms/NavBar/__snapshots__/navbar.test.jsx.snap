@@ -73,11 +73,18 @@ exports[`Search snaphot test 1`] = `
     <div
       className="searchContainer"
     >
-      <input
-        className="form-control"
-        onChange={[Function]}
-        type="text"
-      />
+      <div
+        className="row"
+      >
+        <input
+          className="form-control"
+          onChange={[Function]}
+          type="text"
+        />
+        <div
+          className="row results"
+        />
+      </div>
     </div>
   </nav>
 </div>

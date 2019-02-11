@@ -1,18 +1,18 @@
 import {
-    combineReducers
+  combineReducers
 } from "redux";
 import {
-    authentication
+  authentication,
 } from "./login-reducers";
+import userInformation from "./main-reducers";
 import {
-    userInformation
-} from "./main-reducers";
-import {
-    showSideBar
+  showSideBar,
 } from "./sidebar-reducers";
+import navbarHandle from './navbar-reducers';
 
 export default combineReducers({
-    authentication,
-    userInformation,
-    showSideBar
+  authentication,
+  userInformation,
+  showSideBar,
+  navbarHandle,
 });

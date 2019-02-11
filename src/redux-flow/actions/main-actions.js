@@ -2,7 +2,6 @@ import {
   USER_INFORMATION,
   ARTIST_FOLLOWED,
   USER_LISTENING,
-  SHOW_SEARCH,
   selfInformation,
   followingInformation,
   userListening,
@@ -54,10 +53,3 @@ export const getUserListenNow = () => dispatch => get(userListening)
       });
     }
   });
-
-export const isSearching = isVisible => (dispatch) => {
-  dispatch({
-    type: SHOW_SEARCH,
-    payload: isVisible,
-  });
-};

@@ -6,7 +6,8 @@ import './MainContainer.scss';
 import { withRouter } from 'react-router-dom';
 
 import UserInfo from '../../components/main/UserInfo/UserInfo';
-import { getUserInfo, followingArtist, getUserListenNow, isSearching, } from '../../redux-flow/actions/main-actions';
+import { getUserInfo, followingArtist, getUserListenNow } from '../../redux-flow/actions/main-actions';
+import { searchingTracksArtists, isSearching } from '../../redux-flow/actions/navbar-actions';
 import { showHideSideBar } from '../../redux-flow/actions/sidebar-actions';
 
 import SideBar from '../../components/main/SideBar/SideBar';
@@ -19,7 +20,8 @@ const mapStateToProps = state => ({
   userFollowingArtist: state.userInformation.followingArtist,
   userListening: state.userInformation.userListening,
   sideBar: state.showSideBar,
-  isSearching: state.userInformation.isSearching,
+  isSearching: state.navbarHandle.isSearching,
+  searchResult: state.navbarHandle.searchResult,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -28,6 +30,7 @@ const mapDispatchToProps = dispatch => ({
   onShowSideBar: showHide => dispatch(showHideSideBar(showHide)),
   onUserListening: () => dispatch(getUserListenNow()),
   onIsSearching: isVisible => dispatch(isSearching(isVisible)),
+  onSearchTracksArtists: query => dispatch(searchingTracksArtists(query)),
 });
 
 class MainContainer extends Component {
@@ -46,6 +49,8 @@ class MainContainer extends Component {
           onShowSideBar={this.props.onShowSideBar}
           onIsSearching={this.props.onIsSearching}
           isSearching={this.props.isSearching}
+          onSearchTracksArtists={this.props.onSearchTracksArtists}
+          searchResult={this.props.searchResult}
         />
         <div className="row">
           <div className="col-10 col-sm-4">

@@ -8,8 +8,7 @@ import './SideBar.scss';
 import LoaderHOC from '../../atoms/Loading/LoaderHOC';
 import { CustomCard } from '../../atoms/CustomCard/CustomCard';
 import UserListen from '../../atoms/UserListen/UserListen';
-
-const imageUrl = 'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjY0q2jsMffAhXCvJAKHXo0B68QjRx6BAgBEAU&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FAnonymous&psig=AOvVaw0LvWcw8Dbz2hlIjV2raw_r&ust=1546253220121470';
+import { imageUrl } from '../../../constants/index';
 
 
 // eslint-disable-next-line import/prefer-default-export
@@ -31,7 +30,7 @@ const SideBar = ({
       </div>
       <div className="col-12">
         <CustomCard
-          image={userListening.item.album.images[1].url}
+          image={userListening.item.album ? userListening.item.album.images[1].url : imageUrl}
         >
           <UserListen userListening={userListening} />
         </CustomCard>

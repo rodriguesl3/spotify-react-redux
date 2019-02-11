@@ -8,7 +8,12 @@ import './navbar.scss';
 import Search from '../Search/Search';
 
 const NavBar = ({
-  brandName, onShowSideBar, onIsSearching, isSearching,
+  brandName,
+  onShowSideBar,
+  onIsSearching,
+  isSearching,
+  onSearchTracksArtists,
+  searchResult
 }) => {
   const showSideBarHandle = () => { onShowSideBar(true); };
   const showSearchArtist = () => {
@@ -33,7 +38,14 @@ const NavBar = ({
           <MdSearch />
         </span>
         {isSearching
-          && <Search onIsSearching={onIsSearching} isSearching={isSearching} />
+          && (
+            <Search
+              onIsSearching={onIsSearching}
+              isSearching={isSearching}
+              onSearchTracksArtists={onSearchTracksArtists}
+              searchResult={searchResult}
+            />
+          )
         }
       </nav>
     </div>
