@@ -9,7 +9,7 @@ import {
 } from '../../constants/api';
 
 export const searchingTracksArtists = query => (dispatch) => {
-  const url = `${spotifySearch}?q=${query}&type=track%2Cartist&limit=5`;
+  const url = `${spotifySearch}?q=${query}&type=track%2Cartist&limit=10`;
   get(url).then((response) => {
     console.log(response);
     if (response.status === 200) {

@@ -5,7 +5,7 @@ import React from 'react';
 import './App.css';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import rootReducers from '../../redux-flow/reducers/index';
 
@@ -23,10 +23,12 @@ const store = createStore(rootReducers, compose(applyMiddleware(thunk)));
 const App = () => (
   <Provider store={store}>
     <Router>
-      <div>
-        <Route path="/login" component={Login} />
-        <Route path="/main" component={MainContainer} />
-      </div>
+      <Switch>
+        <div>
+          <Route exact path="/" component={Login} />
+          <Route path="/main" component={MainContainer} />
+        </div>
+      </Switch>
     </Router>
   </Provider>
 );
