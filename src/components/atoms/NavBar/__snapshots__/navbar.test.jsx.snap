@@ -74,16 +74,52 @@ exports[`Search snaphot test 1`] = `
       className="searchContainer"
     >
       <div
-        className="row"
+        className="col-10"
       >
+        <span
+          className="col-2 offset-10 closeButton"
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </span>
         <input
           className="form-control"
           onChange={[Function]}
           type="text"
         />
         <div
-          className="row results"
-        />
+          className="row"
+        >
+          <h3>
+            Artists
+          </h3>
+          <hr
+            style={
+              Object {
+                "borderTop": "1px solid rgba(255, 255, 255, 1.1);",
+              }
+            }
+          />
+          <h3>
+            Tracks
+          </h3>
+        </div>
       </div>
     </div>
   </nav>
