@@ -1,7 +1,7 @@
 import React from 'react';
 import './CustomCard.scss';
 
-export const CustomCard = (props) => {
+export const CustomCard = props => {
   const { image, children } = props;
   return (
     <div className="col-10 col-sm-4 col-lg-3 custom-card">

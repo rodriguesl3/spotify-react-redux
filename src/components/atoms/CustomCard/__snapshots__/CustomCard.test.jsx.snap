@@ -22,3 +22,26 @@ exports[`CustomCard snaphot test 1`] = `
   </div>
 </div>
 `;
+
+exports[`shallow custom card 1`] = `
+<div
+  className="col-10 col-sm-4 col-lg-3 custom-card"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <img
+        alt="card-name"
+        className="card-img-top"
+        src="https://cdn-images-1.medium.com/max/900/1*G2QwxPF2TvWXzRUnA4axoA.png"
+      />
+    </div>
+    <div
+      className="col-7"
+    />
+  </div>
+</div>
+`;

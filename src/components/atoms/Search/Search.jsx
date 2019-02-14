@@ -7,7 +7,7 @@ import { RatingStart } from '../RatingStar/RatingStar';
 import './Search.scss';
 import { CustomCard } from '../CustomCard/CustomCard';
 
-let intervalToSearch = () => { };
+let intervalToSearch = null;
 
 const Search = (props) => {
   const { onIsSearching, isSearching, searchResult, onSearchTracksArtists, } = props;
