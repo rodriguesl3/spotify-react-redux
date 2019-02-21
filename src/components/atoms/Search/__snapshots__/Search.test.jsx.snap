@@ -640,3 +640,1285 @@ exports[`closing search component. 1`] = `
   </div>
 </div>
 `;
+
+exports[`searching something 1`] = `
+<div
+  className="searchContainer"
+>
+  <div
+    className="col-10"
+  >
+    <span
+      className="col-2 offset-10 closeButton"
+      onClick={[Function]}
+    >
+      <MdClose />
+    </span>
+    <input
+      className="form-control"
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="row"
+    >
+      <h3>
+        Artists
+      </h3>
+      <CustomCard
+        image="https://i.scdn.co/image/a320810b7abb77f7a384a415538938546f06b5bd"
+        key="2d9LRvQJnAXRijqIJDDs2K"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Emicida
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={64}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                1271359
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/d11a34d81ced100cf1b50db502969ddfe0eeaaa2"
+        key="3KYRu6Pqd8BFTM6imvX9Y0"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Emicida
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={27}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                81
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image=""
+        key="2t4OkoFtc36pwt9SgDQvqO"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Jorge Aragão, Zeca Pagodinho, Elza Soares, Diogo Nogueira, Emicida, Luciana Mello, Sandra de Sá, Joyce Cândido, Luciana Mello, Martinho da Vila, Vander Lee, Anitta, Xande de Pilares, Péricles, Fundo de Quintal, Maria Rita, Lenine, Alcione, Luiz Melodia, Baby do Brasil, Thais Macedo, Ivan Lins, Jorge Vercillo, Seu Jorge & Beth Carvalho
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={8}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                528
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image=""
+        key="5ncxnOGYpaa4fVqwUSypms"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Emicida & Dj Hum
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={1}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                153
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <hr
+        style={
+          Object {
+            "borderTop": "1px solid rgba(255, 255, 255, 1.1);",
+          }
+        }
+      />
+      <h3>
+        Tracks
+      </h3>
+      <CustomCard
+        image="https://i.scdn.co/image/9c81b33e2fd24313ef8a4700107e58048f1c225f"
+        key="7cnm6MnAwwnf52Jy47WTGN"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Passarinhos (feat. Vanessa Da Mata)
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={58}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/3d9792c6f34a5c7a1e4e09d1ec3dfb389601fdb2"
+        key="2Oc2oLhrsqADmYYFos8tPt"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Passarinhos (Rdio Sessions) (feat. Xênia França) - Ao Vivo
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={54}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/9c81b33e2fd24313ef8a4700107e58048f1c225f"
+        key="7MiSFImFuHFeQqeaSNh9wt"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Baiana (feat. Caetano Veloso)
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={53}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/226d75357944551f1d4c991aa1a1a5fbd417712b"
+        key="0JSux25Te5HYMSr2D64d02"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Levanta e Anda
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={53}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/226d75357944551f1d4c991aa1a1a5fbd417712b"
+        key="2C9LPYpH9YUgROQDHfRXrU"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Hoje Cedo
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={52}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/c1ee4663f73354f62a30e6fc093ff8673c44a4b4"
+        key="6GoFm9E3Nkjve72dwOhmXj"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Camarão Que Dorme A Onda Leva
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={59}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/9bd01261a7deebbc36b9ca74f4e7c26395a9389c"
+        key="5fKqHamS4h3bZk6lwvoSxD"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Levanta e Anda
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={48}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/1c405d8c08c7d0a9f9bf1a4ee5940575aae5dfee"
+        key="1iDARoNb186UAnHvZ6w0gv"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                O Céu É o Limite
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={52}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/7742e5f4220b66c9c41b059113300c27a0d684b8"
+        key="6T9YY1XmfjiqpRZFl7OmYq"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Pantera Negra
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={48}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/8b507993a0213660343e03fff1b25e33f43e609e"
+        key="6jqt08nh1lKvT4JBxwLAS6"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Inácio da Catingueira
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={47}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`veryfing isSearching property. 1`] = `
+<div
+  className="searchContainer"
+>
+  <div
+    className="col-10"
+  >
+    <span
+      className="col-2 offset-10 closeButton"
+      onClick={[Function]}
+    >
+      <MdClose />
+    </span>
+    <input
+      className="form-control"
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="row"
+    >
+      <h3>
+        Artists
+      </h3>
+      <CustomCard
+        image="https://i.scdn.co/image/a320810b7abb77f7a384a415538938546f06b5bd"
+        key="2d9LRvQJnAXRijqIJDDs2K"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Emicida
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={64}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                1271359
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/d11a34d81ced100cf1b50db502969ddfe0eeaaa2"
+        key="3KYRu6Pqd8BFTM6imvX9Y0"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Emicida
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={27}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                81
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image=""
+        key="2t4OkoFtc36pwt9SgDQvqO"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Jorge Aragão, Zeca Pagodinho, Elza Soares, Diogo Nogueira, Emicida, Luciana Mello, Sandra de Sá, Joyce Cândido, Luciana Mello, Martinho da Vila, Vander Lee, Anitta, Xande de Pilares, Péricles, Fundo de Quintal, Maria Rita, Lenine, Alcione, Luiz Melodia, Baby do Brasil, Thais Macedo, Ivan Lins, Jorge Vercillo, Seu Jorge & Beth Carvalho
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={8}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                528
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image=""
+        key="5ncxnOGYpaa4fVqwUSypms"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Emicida & Dj Hum
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={1}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="card-text row"
+            >
+              <p
+                className="col-1"
+              >
+                <GoThumbsup />
+              </p>
+              <p
+                className="col-8"
+              >
+                153
+              </p>
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <hr
+        style={
+          Object {
+            "borderTop": "1px solid rgba(255, 255, 255, 1.1);",
+          }
+        }
+      />
+      <h3>
+        Tracks
+      </h3>
+      <CustomCard
+        image="https://i.scdn.co/image/9c81b33e2fd24313ef8a4700107e58048f1c225f"
+        key="7cnm6MnAwwnf52Jy47WTGN"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Passarinhos (feat. Vanessa Da Mata)
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={58}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/3d9792c6f34a5c7a1e4e09d1ec3dfb389601fdb2"
+        key="2Oc2oLhrsqADmYYFos8tPt"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Passarinhos (Rdio Sessions) (feat. Xênia França) - Ao Vivo
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={54}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/9c81b33e2fd24313ef8a4700107e58048f1c225f"
+        key="7MiSFImFuHFeQqeaSNh9wt"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Baiana (feat. Caetano Veloso)
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={53}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/226d75357944551f1d4c991aa1a1a5fbd417712b"
+        key="0JSux25Te5HYMSr2D64d02"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Levanta e Anda
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={53}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/226d75357944551f1d4c991aa1a1a5fbd417712b"
+        key="2C9LPYpH9YUgROQDHfRXrU"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Hoje Cedo
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={52}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/c1ee4663f73354f62a30e6fc093ff8673c44a4b4"
+        key="6GoFm9E3Nkjve72dwOhmXj"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Camarão Que Dorme A Onda Leva
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={59}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/9bd01261a7deebbc36b9ca74f4e7c26395a9389c"
+        key="5fKqHamS4h3bZk6lwvoSxD"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Levanta e Anda
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={48}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/1c405d8c08c7d0a9f9bf1a4ee5940575aae5dfee"
+        key="1iDARoNb186UAnHvZ6w0gv"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                O Céu É o Limite
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={52}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/7742e5f4220b66c9c41b059113300c27a0d684b8"
+        key="6T9YY1XmfjiqpRZFl7OmYq"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Pantera Negra
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={48}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+      <CustomCard
+        image="https://i.scdn.co/image/8b507993a0213660343e03fff1b25e33f43e609e"
+        key="6jqt08nh1lKvT4JBxwLAS6"
+      >
+        <div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <h5
+                className="card-title"
+              >
+                Inácio da Catingueira
+              </h5>
+              Popularity:
+            </div>
+            <div
+              className="col-12"
+            >
+              <RatingStart
+                ratingValue={47}
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <button
+              className="btn btn-success"
+              type="button"
+            >
+              More in
+              <FaSpotify />
+            </button>
+          </div>
+        </div>
+      </CustomCard>
+    </div>
+  </div>
+</div>
+`;

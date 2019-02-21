@@ -22,9 +22,9 @@ const SideBar = ({
   return (
     <div className={`row ${!showSideBar ? 'sideBarContent' : 'sideBarContent-full'}`}>
       <div className="col-12 userName">
-        <span onClick={hideSideBarHandle} className="col-2 offset-9 closeButton">
+        <button type="button" onClick={hideSideBarHandle} className="col-2 offset-9 closeButton">
           <MdClose />
-        </span>
+        </button>
         <img src={(spotifyUserInfo) ? (spotifyUserInfo.images[0].url) : (imageUrl)} alt="" className="imageProfile" />
         <p>{(spotifyUserInfo) && spotifyUserInfo.display_name}</p>
       </div>
