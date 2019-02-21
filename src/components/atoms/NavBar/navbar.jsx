@@ -13,7 +13,7 @@ const NavBar = ({
   onIsSearching,
   isSearching,
   onSearchTracksArtists,
-  searchResult
+  searchResult,
 }) => {
   const showSideBarHandle = () => { onShowSideBar(true); };
   const showSearchArtist = () => {
@@ -34,7 +34,7 @@ const NavBar = ({
         <span onClick={showSideBarHandle} className="profileIcon" role="presentation">
           <MdPerson size={30} />
         </span>
-        <span onClick={showSearchArtist} >
+        <span className="searchArtist" onClick={showSearchArtist} >
           <MdSearch />
         </span>
         {isSearching
