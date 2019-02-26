@@ -5,7 +5,6 @@ import React from 'react';
 import { MdClose } from 'react-icons/md/index';
 
 import './SideBar.scss';
-import LoaderHOC from '../../atoms/Loading/LoaderHOC';
 import { CustomCard } from '../../atoms/CustomCard/CustomCard';
 import UserListen from '../../atoms/UserListen/UserListen';
 import { imageUrl } from '../../../constants/index';
@@ -42,5 +41,4 @@ const SideBar = ({
   );
 };
 
-//export default LoaderHOC('userListening', SideBar);
 export default SideBar;

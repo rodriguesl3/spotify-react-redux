@@ -1,29 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FollowingArtists list of card 1`] = `
-<section>
-  <div
-    className="load"
-    id="load1"
-  />
-  <div
-    className="load"
-    id="load2"
-  />
-  <div
-    className="load"
-    id="load3"
-  />
-  <div
-    className="load"
-    id="load4"
-  />
-  <div
-    className="load"
-    id="load5"
-  />
-</section>
-`;
+exports[`FollowingArtists list of card 1`] = `<Load />`;
 
 exports[`FollowingArtists snaphot test 1`] = `
 <section>
