@@ -12,7 +12,6 @@ import {
 } from '../../constants/api';
 
 export const userInfoResponse = (response, dispatch, history) => {
-  //console.log('UserInfo:', response);
   if (response.status === 200) {
     dispatch({
       type: USER_INFORMATION,
@@ -20,6 +19,24 @@ export const userInfoResponse = (response, dispatch, history) => {
     });
   } else {
     history.push('/login');
+  }
+};
+
+export const dispatchUserListNow = (response, dispatch) => {
+  if (response.status === 200) {
+    dispatch({
+      type: USER_LISTENING,
+      payload: response.data,
+    });
+  }
+};
+
+export const dispatchFollowinArtists = (response, dispatch) => {
+  if (response.status === 200) {
+    dispatch({
+      type: ARTIST_FOLLOWED,
+      payload: response.data,
+    });
   }
 };
 
@@ -35,24 +52,8 @@ export const getUserInfo = history => dispatch => get(selfInformation)
 export const followingArtist = () => (dispatch) => {
   const fullUrl = `${followingInformation}?type=artist&limit=30`;
   return get(fullUrl)
-    .then((response) => {
-      console.log('followingArtist:', response);
-      if (response.status === 200) {
-        dispatch({
-          type: ARTIST_FOLLOWED,
-          payload: response.data,
-        });
-      }
-    });
+    .then(response => dispatchFollowinArtists(response, dispatch));
 };
 
 export const getUserListenNow = () => dispatch => get(userListening)
-  .then((response) => {
-    console.log('getUserListenNow', response);
-    if (response.status === 200) {
-      dispatch({
-        type: USER_LISTENING,
-        payload: response.data,
-      });
-    }
-  });
+  .then(response => dispatchUserListNow(response, dispatch));
