@@ -11,18 +11,21 @@ import {
   get,
 } from '../../constants/api';
 
+export const userInfoResponse = (response, dispatch, history) => {
+  //console.log('UserInfo:', response);
+  if (response.status === 200) {
+    dispatch({
+      type: USER_INFORMATION,
+      payload: response.data,
+    });
+  } else {
+    history.push('/login');
+  }
+};
+
+
 export const getUserInfo = history => dispatch => get(selfInformation)
-  .then((response) => {
-    console.log('UserInfo:', response);
-    if (response.status === 200) {
-      dispatch({
-        type: USER_INFORMATION,
-        payload: response.data,
-      });
-    } else {
-      history.push('/login');
-    }
-  })
+  .then(response => userInfoResponse(response, dispatch, history))
   .catch((error) => {
     if (error.response && error.response.status && error.response.status === 401) {
       history.push('/login');
