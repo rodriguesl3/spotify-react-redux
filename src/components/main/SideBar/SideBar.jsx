@@ -13,7 +13,10 @@ import { imageUrl } from '../../../constants/index';
 
 // eslint-disable-next-line import/prefer-default-export
 const SideBar = ({
-  spotifyUserInfo, showSideBar, onShowSideBar, userListening
+  spotifyUserInfo,
+  showSideBar,
+  onShowSideBar,
+  userListening
 }) => {
   const hideSideBarHandle = () => {
     onShowSideBar(false);
@@ -22,7 +25,7 @@ const SideBar = ({
   return (
     <div className={`row ${!showSideBar ? 'sideBarContent' : 'sideBarContent-full'}`}>
       <div className="col-12 userName">
-        <button type="button" onClick={hideSideBarHandle} className="col-2 offset-9 closeButton">
+        <button type="button" className="closeButton col-2 offset-9 " onClick={hideSideBarHandle}>
           <MdClose />
         </button>
         <img src={(spotifyUserInfo) ? (spotifyUserInfo.images[0].url) : (imageUrl)} alt="" className="imageProfile" />
@@ -30,7 +33,7 @@ const SideBar = ({
       </div>
       <div className="col-12">
         <CustomCard
-          image={userListening.item.album ? userListening.item.album.images[1].url : imageUrl}
+          image={(userListening ? userListening.item.album.images[1].url : imageUrl)}
         >
           <UserListen userListening={userListening} />
         </CustomCard>
@@ -39,4 +42,5 @@ const SideBar = ({
   );
 };
 
-export default LoaderHOC('userListening', SideBar);
+//export default LoaderHOC('userListening', SideBar);
+export default SideBar;

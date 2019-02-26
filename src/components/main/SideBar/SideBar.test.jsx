@@ -6,7 +6,7 @@ import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 
 import SideBar from './SideBar';
-import { userInfo, userListening } from '../UserInfo/__mocks__/objectsMocks';
+import { userInfo, userListeningItem } from '../UserInfo/__mocks__/objectsMocks';
 
 test('SideBar snaphot test', () => {
   const component = shallow(<SideBar showSideBar="true" spotifyUserInfo={userInfo.data} />);
@@ -14,17 +14,17 @@ test('SideBar snaphot test', () => {
 });
 
 
-// test('SideBar event test', () => {
-//   const onMockShowSideBar = jest.fn();
+test('SideBar event test', () => {
+  const onMockShowSideBar = jest.fn();
 
-//   const output = shallow(<SideBar
-//     showSideBar
-//     spotifyUserInfo={userInfo.data}
-//     onShowSideBar={onMockShowSideBar}
-//     userListening={userListening.data}
-//   />);
+  const output = shallow(<SideBar
+    showSideBar
+    spotifyUserInfo={userInfo.data}
+    onShowSideBar={onMockShowSideBar}
+    userListening={userListeningItem}
+  />);
 
-//   expect(shallowToJson(output)).toMatchSnapshot();
-//   output.find('.closeButton').props('onClick')();
-//   expect(onMockShowSideBar).toHaveBeenCalledWith(false);
-// });
+  expect(shallowToJson(output)).toMatchSnapshot();
+  output.find('.closeButton').simulate('click');
+  expect(onMockShowSideBar).toHaveBeenCalledWith(false);
+});
