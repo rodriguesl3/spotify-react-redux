@@ -16,7 +16,7 @@ export const isDevelopmentEnvironment = (window) => {
   return LOGIN_TOKEN;
 };
 
-export const isValidUrlHandle = (win) => {
+export const isValidUrlHandle = (win, window) => {
   try {
     return win.document.location.origin === window.document.location.origin;
   } catch (error) {
@@ -29,21 +29,7 @@ export const submitCredentials = (credentials, history) => dispatch => requestCr
     const win = window.open(response.data, '', 'location=no,toolbar=0');
 
     const polTimer = window.setInterval(() => {
-      const isValidUrl = isValidUrlHandle(win);
-
-      if (isValidUrl) {
-        clearInterval(polTimer);
-        const accessToken = win.document.location.pathname.split('=')[1];
-        win.close();
-        window.sessionStorage.setItem('access_token', accessToken);
-
-        history.push('/main');
-
-        dispatch({
-          type: USER_AUTHENTICATION,
-          payload: accessToken,
-        });
-      }
+      redirectSubmitCredential(win, window, history, dispatch, polTimer)
     }, 600);
   });
 
@@ -51,3 +37,20 @@ export const addCredentials = credentials => ({
   type: ADD_CREDENTIALS,
   payload: credentials,
 });
+
+export const redirectSubmitCredential = (win, window, history, dispatch, polTimer) => {
+  const isValidUrl = isValidUrlHandle(win, window);
+  if (isValidUrl) {
+    clearInterval(polTimer);
+    const accessToken = win.document.location.pathname.split('=')[1];
+    win.close();
+    window.sessionStorage.setItem('access_token', accessToken);
+
+    history.push('/main');
+
+    dispatch({
+      type: USER_AUTHENTICATION,
+      payload: accessToken,
+    });
+  }
+}
