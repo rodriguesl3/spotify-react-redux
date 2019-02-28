@@ -1,5 +1,9 @@
 /* eslint-disable no-undef */
 import {
+  LOGIN_TOKEN,
+} from '../../constants';
+
+import {
   isDevelopmentEnvironment,
   isValidUrlHandle,
 } from './login-actions';
@@ -9,19 +13,30 @@ import {
   requestCredentials,
 } from '../../services/credentials';
 
+jest.mock('../../services/credentials');
+
 test('is development environment', () => {
   const window = {
-    location: 'http://localhost:5000',
+    location: {
+      origin: 'http://localhost:5000',
+    },
   };
 
-  const url = isDevelopmentEnvironment();
+  const url = isDevelopmentEnvironment(window);
   expect(url).toContain('development=true');
 });
 
 
 test('is not development environment', () => {
-  const url = isDevelopmentEnvironment();
-  expect(url).toContain('development=true');
+
+  const window = {
+    location: {
+      origin: 'http://azure.windows.com:5000',
+    },
+  };
+
+  const url = isDevelopmentEnvironment(window);
+  expect(url).toEqual(LOGIN_TOKEN);
 });
 
 
@@ -37,7 +52,12 @@ test('is valid url', () => {
   expect(isValid).toBeTruthy();
 });
 
-jest.mock('../../services/credentials');
+test('is not valid url', () => {
+  const win = null;
+  const isValid = isValidUrlHandle(win);
+  expect(isValid).toBeFalsy();
+});
+
 
 test('mocking async request', (done) => {
   requestCredentials().then((response) => {

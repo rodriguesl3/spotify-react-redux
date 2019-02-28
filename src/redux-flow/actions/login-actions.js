@@ -9,7 +9,7 @@ import {
 } from '../../services/credentials';
 
 
-export const isDevelopmentEnvironment = () => {
+export const isDevelopmentEnvironment = (window) => {
   if (window.location.origin.indexOf('localhost') >= 0) {
     return `${LOGIN_TOKEN}?development=true`;
   }
