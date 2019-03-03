@@ -1,6 +1,12 @@
 dist: trusty
 sudo: required
 
+notifications:
+  email:
+    recipients:
+      - lusk.rs@gmail.com
+    on_success: never 
+    on_failure: always
 
 language: node_js
 

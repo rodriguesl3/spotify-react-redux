@@ -10,6 +10,8 @@ import {
   isDevelopmentEnvironment,
   isValidUrlHandle,
   redirectSubmitCredential,
+  submitCredentials,
+  openWindow,
 } from './login-actions';
 
 
@@ -124,4 +126,39 @@ test('redirect Credentials', () => {
   expect(history.push).toBeCalledWith('/main');
   expect(win.close).toBeCalled();
   expect(window.sessionStorage.setItem).toBeCalledWith('access_token', '123123123');
+});
+
+test('redirectSubmitCredential false', () => {
+  const store = mockStore({});
+  const history = {
+    push: jest.fn(),
+  };
+  const win = null;
+  const window = {
+    close: jest.fn(),
+    sessionStorage: {
+      setItem: jest.fn(),
+    },
+    document: {
+      location: {
+        origin: 'http://localhost:5000?session=123123123',
+        pathname: 'http://localhost:5000?session=123123123',
+      },
+    },
+  };
+  const polTimer = setTimeout(jest.fn(), 5);
+  redirectSubmitCredential(win, window, history, store.dispatch, polTimer);
+  expect(history.push).toBeCalledWith('/login');
+});
+
+test('test window open', () => {
+  const window = {
+    open: jest.fn(),
+  };
+  const response = {
+    data: {},
+  };
+
+  openWindow(window, response.data);
+  expect(window.open).toHaveBeenCalledWith(response.data, '', 'location=no,toolbar=0');
 });

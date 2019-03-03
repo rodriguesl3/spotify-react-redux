@@ -24,9 +24,11 @@ export const isValidUrlHandle = (win, window) => {
   }
 };
 
+export const openWindow = (window, value) => window.open(value, '', 'location=no,toolbar=0');
+
 export const submitCredentials = (credentials, history) => dispatch => requestCredentials()
   .then((response) => {
-    const win = window.open(response.data, '', 'location=no,toolbar=0');
+    const win = openWindow(window, response.data);
 
     const polTimer = window.setInterval(() => {
       redirectSubmitCredential(win, window, history, dispatch, polTimer)
@@ -52,5 +54,7 @@ export const redirectSubmitCredential = (win, window, history, dispatch, polTime
       type: USER_AUTHENTICATION,
       payload: accessToken,
     });
+  } else {
+    history.push('/login');
   }
-}
+};
