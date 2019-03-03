@@ -31,7 +31,7 @@ export const submitCredentials = (credentials, history) => dispatch => requestCr
     const win = openWindow(window, response.data);
 
     const polTimer = window.setInterval(() => {
-      redirectSubmitCredential(win, window, history, dispatch, polTimer)
+      redirectSubmitCredential(win, window, history, dispatch, polTimer);
     }, 600);
   });
 

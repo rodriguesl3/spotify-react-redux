@@ -40,13 +40,19 @@ export const dispatchFollowinArtists = (response, dispatch) => {
   }
 };
 
+export const validateError = (error, history) => {
+  if (error.response && error.response.status && error.response.status === 401) {
+    history.push('/login');
+  } else {
+    console.log('error to get user Info');
+    history.push('/main');
+  }
+};
 
 export const getUserInfo = history => dispatch => get(selfInformation)
   .then(response => userInfoResponse(response, dispatch, history))
   .catch((error) => {
-    if (error.response && error.response.status && error.response.status === 401) {
-      history.push('/login');
-    }
+    validateError(error, history);
   });
 
 export const followingArtist = () => (dispatch) => {

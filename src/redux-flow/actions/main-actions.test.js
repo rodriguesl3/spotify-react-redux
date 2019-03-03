@@ -21,6 +21,7 @@ import {
   getUserInfo,
   dispatchUserListNow,
   dispatchFollowinArtists,
+  validateError,
 } from './main-actions';
 
 
@@ -115,4 +116,33 @@ describe('Following artists', () => {
     const actions = store.getActions();
     expect(actions[0]).toBeUndefined();
   });
+});
+
+test('forbidden access getUserInfo', () => {
+  const history = {
+    push: jest.fn(),
+  };
+  const error = {
+    response: {
+      status: 401,
+    }
+  };
+
+  validateError(error, history);
+  expect(history.push).toBeCalledWith('/login');
+});
+
+
+test('generic error access getUserInfo', () => {
+  const history = {
+    push: jest.fn(),
+  };
+  const error = {
+    response: {
+      status: 505,
+    },
+  };
+
+  validateError(error, history);
+  expect(history.push).toBeCalledWith('/main');
 });
