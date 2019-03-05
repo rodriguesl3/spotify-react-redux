@@ -7,7 +7,7 @@ import { MdClose } from 'react-icons/md/index';
 import './SideBar.scss';
 import { CustomCard } from '../../atoms/CustomCard/CustomCard';
 import UserListen from '../../atoms/UserListen/UserListen';
-import { imageUrl } from '../../../constants/index';
+import { imageUrl as defaultImage } from '../../../constants/index';
 
 
 // eslint-disable-next-line import/prefer-default-export
@@ -27,12 +27,12 @@ const SideBar = ({
         <button type="button" className="closeButton col-2 offset-9 " onClick={hideSideBarHandle}>
           <MdClose />
         </button>
-        <img src={(spotifyUserInfo) ? (spotifyUserInfo.images[0].url) : (imageUrl)} alt="" className="imageProfile" />
+        <img src={(spotifyUserInfo) ? (spotifyUserInfo.images[0].url) : (defaultImage)} alt="" className="imageProfile" />
         <p>{(spotifyUserInfo) && spotifyUserInfo.display_name}</p>
       </div>
       <div className="col-12">
         <CustomCard
-          image={(userListening ? userListening.item.album.images[1].url : imageUrl)}
+          image={(userListening && userListening.currently_playing_type !== 'ad' ? userListening.item.album.images[1].url : defaultImage)}
         >
           <UserListen userListening={userListening} />
         </CustomCard>

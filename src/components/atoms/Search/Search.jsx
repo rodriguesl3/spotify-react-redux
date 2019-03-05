@@ -10,7 +10,12 @@ import { CustomCard } from '../CustomCard/CustomCard';
 let intervalToSearch = null;
 
 const Search = (props) => {
-  const { onIsSearching, isSearching, searchResult, onSearchTracksArtists, } = props;
+  const {
+    onIsSearching,
+    isSearching,
+    searchResult,
+    onSearchTracksArtists,
+  } = props;
 
   const showSearchArtist = () => {
     onIsSearching(!isSearching);
@@ -84,7 +89,7 @@ const Search = (props) => {
         </span>
         <input type="text" className="form-control" onChange={updateSearchHandle} />
         <div className="row">
-          <h3>Artists</h3>
+          {searchResult && <h3>Artists</h3>}
           {searchResult && searchResult.artists.items.map(item => (
             <CustomCard
               key={item.id}
@@ -94,7 +99,7 @@ const Search = (props) => {
             </CustomCard>
           ))}
           <hr style={{ borderTop: '1px solid rgba(255, 255, 255, 1.1);' }} />
-          <h3>Tracks</h3>
+          {searchResult && <h3>Tracks</h3>}
           {searchResult && searchResult.tracks.items.map(item => (
             <CustomCard
               key={item.id}

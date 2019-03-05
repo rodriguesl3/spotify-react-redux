@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicking next music. 1`] = `
+<div>
+  <span>
+    Device:
+    huawei
+  </span>
+  <p>
+    Type:
+    mobile
+  </p>
+  <div
+    className="row"
+  >
+    <div
+      className="col-9"
+    >
+      <span>
+        teste
+      </span>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-3"
+    >
+      <p
+        className="previous"
+        onClick={[Function]}
+      >
+        <MdSkipPrevious />
+      </p>
+    </div>
+    <div
+      className="col-3"
+    >
+      <p>
+        <FaRegPlayCircle />
+      </p>
+    </div>
+    <div
+      className="col-3"
+    >
+      <p
+        className="next"
+        onClick={[Function]}
+      >
+        <MdSkipNext />
+      </p>
+    </div>
+  </div>
+  <span>
+    <RatingStart />
+  </span>
+</div>
+`;
+
+exports[`clicking previous music. 1`] = `
+<div>
+  <span>
+    Device:
+    huawei
+  </span>
+  <p>
+    Type:
+    mobile
+  </p>
+  <div
+    className="row"
+  >
+    <div
+      className="col-9"
+    >
+      <span>
+        teste
+      </span>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-3"
+    >
+      <p
+        className="previous"
+        onClick={[Function]}
+      >
+        <MdSkipPrevious />
+      </p>
+    </div>
+    <div
+      className="col-3"
+    >
+      <p>
+        <FaRegPlayCircle />
+      </p>
+    </div>
+    <div
+      className="col-3"
+    >
+      <p
+        className="next"
+        onClick={[Function]}
+      >
+        <MdSkipNext />
+      </p>
+    </div>
+  </div>
+  <span>
+    <RatingStart />
+  </span>
+</div>
+`;

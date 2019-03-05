@@ -20,7 +20,9 @@ const UserInfo = (props) => {
       <div>
         <h5>That you are listen now?</h5>
         <CustomCard
-          image={userListening.item.album ? userListening.item.album.images[1].url : imageUrl}
+          image={userListening.item && userListening.item.album
+            ? userListening.item.album.images[1].url
+            : imageUrl}
         >
           <UserListen
             userListening={userListening}
