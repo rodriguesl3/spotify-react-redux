@@ -2,14 +2,17 @@ import React from 'react';
 
 import { FaRegPlayCircle, FaRegPauseCircle } from 'react-icons/fa';
 import { RatingStart } from '../RatingStar/RatingStar';
+import LoaderHOC from '../Loading/LoaderHOC';
 
 const UserListen = ({ userListening }) => (
   <div>
     <span>
-      Device: {userListening.device.name}
+      Device:
+      {userListening.device.name}
     </span>
     <p>
-      Type: {userListening.device.type}
+      Type:
+      {userListening.device.type}
     </p>
     <div className="row">
       <div className="col-1">
@@ -25,4 +28,5 @@ const UserListen = ({ userListening }) => (
   </div>
 );
 
-export default UserListen;
+
+export default LoaderHOC('userListening', UserListen);

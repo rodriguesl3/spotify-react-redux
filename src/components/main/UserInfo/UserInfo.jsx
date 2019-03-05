@@ -13,8 +13,10 @@ const UserInfo = (props) => {
     <div className="user-content">
       <h3>
         Welcome
-        {spotifyUserInfo && spotifyUserInfo.display_name}
       </h3>
+      <h2>
+        {spotifyUserInfo && spotifyUserInfo.display_name}
+      </h2>
       <div>
         <h5>That you are listen now?</h5>
         <CustomCard

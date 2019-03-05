@@ -1,27 +1,25 @@
 .user-content {
   color: #FFFFFF;
-}
-
-.user-content .card-player {
-  color: #001F54;
-  border-radius: 25px;
-  width: 100%;
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/*
+.user-content h3 {
+  margin-bottom: 0;
+}
 
-    background: white;
-    border-radius: 25px;
-    color: black;
-*/
+.user-content h2 {
+  margin-bottom: 2rem;
+}
 /*# sourceMappingURL=UserInfo.css.map */

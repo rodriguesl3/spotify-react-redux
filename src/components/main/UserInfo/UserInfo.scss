@@ -2,6 +2,16 @@
 
 .user-content {
     color: $component-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    h3 {
+        margin-bottom: 0;
+    }
     
+    h2 {
+        margin-bottom: 2rem;
+    }
 }

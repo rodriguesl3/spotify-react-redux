@@ -1,8 +1,9 @@
 .custom-card {
-  background-color: #001F54;
+  background-color: black;
   margin: 20px 20px 20px 40px;
   padding: 20px;
   border-radius: 25px;
+  border: gray 2px solid;
 }
 
 .card-img-top {
