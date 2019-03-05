@@ -6,8 +6,10 @@ exports[`UserInfo snaphot test 1`] = `
 >
   <h3>
     Welcome
-    Lucas Rodrigues
   </h3>
+  <h2>
+    Lucas Rodrigues
+  </h2>
   <div>
     <h5>
       That you are listen now?
@@ -32,11 +34,11 @@ exports[`UserInfo snaphot test 1`] = `
         >
           <div>
             <span>
-              Device: 
+              Device:
               LAPTOP-RB4MNQUG
             </span>
             <p>
-              Type: 
+              Type:
               Computer
             </p>
             <div

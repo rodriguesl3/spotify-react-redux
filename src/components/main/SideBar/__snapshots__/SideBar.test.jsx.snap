@@ -29,7 +29,7 @@ exports[`SideBar event test 1`] = `
     <CustomCard
       image="https://i.scdn.co/image/d517611a9aef994460eb73e5d38d59149e6f3fef"
     >
-      <UserListen
+      <LoaderClassHOC
         userListening={
           Object {
             "currently_playing_type": "track",
@@ -326,7 +326,7 @@ exports[`SideBar snaphot test 1`] = `
     <CustomCard
       image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/800px-Anonymous_emblem.svg.png"
     >
-      <UserListen />
+      <LoaderClassHOC />
     </CustomCard>
   </div>
 </div>
