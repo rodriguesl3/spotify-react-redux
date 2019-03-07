@@ -44,7 +44,7 @@ export const validateError = (error, history) => {
   if (error.response && error.response.status && error.response.status === 401) {
     history.push('/login');
   } else {
-    console.log('error to get user Info');
+    
     history.push('/main');
   }
 };

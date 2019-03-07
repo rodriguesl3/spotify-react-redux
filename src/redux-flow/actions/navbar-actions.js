@@ -11,7 +11,7 @@ import {
 
 
 export const validateSearchTrackArtists = (response, dispatch) => {
-  console.log(response);
+
   if (response.status === 200) {
     dispatch({
       type: SPOTIFY_SEARCH,

@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 

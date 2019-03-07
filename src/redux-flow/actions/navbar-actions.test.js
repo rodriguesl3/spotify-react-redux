@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
@@ -15,7 +14,7 @@ test('is Searching test with true parameter', () => {
   const isSearchResult = isSearching(true)(store.dispatch);
 
   const actions = store.getActions();
-  console.log(actions[0]);
+
   expect(actions[0]).toHaveProperty('type', 'SHOW_SEARCH');
   expect(actions[0]).toHaveProperty('payload', true);
 });
@@ -51,7 +50,7 @@ test('mock response with error', () => {
   validateSearchTrackArtists(response, store.dispatch);
 
   const actions = store.getActions();
-  console.log('actions => ', actions);
+
   expect(actions[0]).toHaveProperty('type', 'SPOTIFY_SEARCH_ERROR');
   expect(actions[0]).toHaveProperty('payload', '');
 });
