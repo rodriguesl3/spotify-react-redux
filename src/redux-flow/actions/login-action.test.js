@@ -10,7 +10,6 @@ import {
   isDevelopmentEnvironment,
   isValidUrlHandle,
   redirectSubmitCredential,
-  submitCredentials,
   openWindow,
 } from './login-actions';
 

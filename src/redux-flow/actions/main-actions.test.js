@@ -125,7 +125,7 @@ test('forbidden access getUserInfo', () => {
   const error = {
     response: {
       status: 401,
-    }
+    },
   };
 
   validateError(error, history);
