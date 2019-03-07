@@ -4,7 +4,6 @@ import { FaRegPlayCircle, FaRegPauseCircle } from 'react-icons/fa';
 import { MdSkipPrevious, MdSkipNext } from 'react-icons/md';
 
 import { RatingStart } from '../RatingStar/RatingStar';
-import LoaderHOC from '../Loading/LoaderHOC';
 
 const UserListen = ({ userListening, onChangeMusic }) => {
   const changeMusicHandle = (changeParam) => {
